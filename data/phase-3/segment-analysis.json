@@ -1,0 +1,534 @@
+{
+  "created_at": "2026-07-28T19:42:58+00:00",
+  "play_store_bias_note": "Current enriched sample is complaint-heavy and dominated by Play Store reviews.",
+  "items": [
+    {
+      "segment": "family_household",
+      "review_count": 61,
+      "top_missions": [
+        [
+          "replenishment",
+          52
+        ],
+        [
+          "urgent_need",
+          4
+        ],
+        [
+          "planned_purchase",
+          3
+        ],
+        [
+          "occasion_based",
+          1
+        ],
+        [
+          "browse_discover",
+          1
+        ]
+      ],
+      "top_barriers": [
+        [
+          "trust_quality",
+          32
+        ],
+        [
+          "past_bad_experience",
+          25
+        ],
+        [
+          "delivery_fee_threshold",
+          10
+        ],
+        [
+          "other",
+          6
+        ],
+        [
+          "poor_discovery",
+          6
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "lack_of_trust",
+          29
+        ],
+        [
+          "poor_discovery",
+          6
+        ],
+        [
+          "unavailable_products",
+          5
+        ],
+        [
+          "price_uncertainty",
+          5
+        ],
+        [
+          "habit_lock_in",
+          4
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          48
+        ],
+        [
+          "medium",
+          12
+        ],
+        [
+          "high",
+          1
+        ]
+      ]
+    },
+    {
+      "segment": "habitual_replenisher",
+      "review_count": 39,
+      "top_missions": [
+        [
+          "replenishment",
+          37
+        ],
+        [
+          "urgent_need",
+          2
+        ]
+      ],
+      "top_barriers": [
+        [
+          "past_bad_experience",
+          15
+        ],
+        [
+          "trust_quality",
+          12
+        ],
+        [
+          "poor_discovery",
+          8
+        ],
+        [
+          "delivery_fee_threshold",
+          6
+        ],
+        [
+          "habit_lock_in",
+          5
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "poor_discovery",
+          9
+        ],
+        [
+          "lack_of_trust",
+          8
+        ],
+        [
+          "habit_lock_in",
+          5
+        ],
+        [
+          "other",
+          5
+        ],
+        [
+          "price_uncertainty",
+          3
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          31
+        ],
+        [
+          "medium",
+          8
+        ]
+      ]
+    },
+    {
+      "segment": "deal_seeker",
+      "review_count": 18,
+      "top_missions": [
+        [
+          "replenishment",
+          12
+        ],
+        [
+          "deal_hunting",
+          3
+        ],
+        [
+          "browse_discover",
+          2
+        ],
+        [
+          "impulse_purchase",
+          1
+        ]
+      ],
+      "top_barriers": [
+        [
+          "price_sensitivity",
+          14
+        ],
+        [
+          "trust_quality",
+          3
+        ],
+        [
+          "other",
+          2
+        ],
+        [
+          "assortment_gap",
+          2
+        ],
+        [
+          "information_gap",
+          1
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "price_uncertainty",
+          14
+        ],
+        [
+          "unavailable_products",
+          2
+        ],
+        [
+          "lack_of_trust",
+          2
+        ],
+        [
+          "lack_of_information",
+          1
+        ],
+        [
+          "habit_lock_in",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          11
+        ],
+        [
+          "medium",
+          4
+        ],
+        [
+          "high",
+          3
+        ]
+      ]
+    },
+    {
+      "segment": "new_user",
+      "review_count": 17,
+      "top_missions": [
+        [
+          "replenishment",
+          11
+        ],
+        [
+          "urgent_need",
+          5
+        ],
+        [
+          "browse_discover",
+          1
+        ]
+      ],
+      "top_barriers": [
+        [
+          "trust_quality",
+          7
+        ],
+        [
+          "poor_discovery",
+          6
+        ],
+        [
+          "past_bad_experience",
+          5
+        ],
+        [
+          "delivery_fee_threshold",
+          2
+        ],
+        [
+          "habit_lock_in",
+          2
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "lack_of_trust",
+          7
+        ],
+        [
+          "poor_discovery",
+          6
+        ],
+        [
+          "habit_lock_in",
+          2
+        ],
+        [
+          "price_uncertainty",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          14
+        ],
+        [
+          "medium",
+          2
+        ],
+        [
+          "high",
+          1
+        ]
+      ]
+    },
+    {
+      "segment": "explorer",
+      "review_count": 15,
+      "top_missions": [
+        [
+          "browse_discover",
+          15
+        ]
+      ],
+      "top_barriers": [
+        [
+          "poor_discovery",
+          7
+        ],
+        [
+          "other",
+          4
+        ],
+        [
+          "cognitive_overload",
+          2
+        ],
+        [
+          "information_gap",
+          1
+        ],
+        [
+          "habit_lock_in",
+          1
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "poor_discovery",
+          7
+        ],
+        [
+          "lack_of_information",
+          1
+        ],
+        [
+          "habit_lock_in",
+          1
+        ],
+        [
+          "lack_of_trust",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "high",
+          13
+        ],
+        [
+          "low",
+          2
+        ]
+      ]
+    },
+    {
+      "segment": "single_professional",
+      "review_count": 7,
+      "top_missions": [
+        [
+          "urgent_need",
+          5
+        ],
+        [
+          "replenishment",
+          2
+        ]
+      ],
+      "top_barriers": [
+        [
+          "delivery_fee_threshold",
+          3
+        ],
+        [
+          "past_bad_experience",
+          2
+        ],
+        [
+          "trust_quality",
+          2
+        ],
+        [
+          "poor_discovery",
+          2
+        ],
+        [
+          "mission_narrowness",
+          1
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "lack_of_trust",
+          2
+        ],
+        [
+          "poor_discovery",
+          2
+        ],
+        [
+          "price_uncertainty",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          4
+        ],
+        [
+          "medium",
+          3
+        ]
+      ]
+    },
+    {
+      "segment": "health_conscious",
+      "review_count": 4,
+      "top_missions": [
+        [
+          "browse_discover",
+          2
+        ],
+        [
+          "replenishment",
+          2
+        ]
+      ],
+      "top_barriers": [
+        [
+          "trust_quality",
+          2
+        ],
+        [
+          "poor_discovery",
+          1
+        ],
+        [
+          "other",
+          1
+        ],
+        [
+          "information_gap",
+          1
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "poor_discovery",
+          1
+        ],
+        [
+          "lack_of_trust",
+          1
+        ],
+        [
+          "other",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "low",
+          2
+        ],
+        [
+          "high",
+          1
+        ],
+        [
+          "medium",
+          1
+        ]
+      ]
+    },
+    {
+      "segment": "parent",
+      "review_count": 3,
+      "top_missions": [
+        [
+          "replenishment",
+          2
+        ],
+        [
+          "urgent_need",
+          1
+        ]
+      ],
+      "top_barriers": [
+        [
+          "past_bad_experience",
+          3
+        ],
+        [
+          "delivery_fee_threshold",
+          1
+        ],
+        [
+          "trust_quality",
+          1
+        ]
+      ],
+      "top_discovery_barriers": [
+        [
+          "lack_of_trust",
+          1
+        ]
+      ],
+      "experimentation_likelihood": [
+        [
+          "medium",
+          2
+        ],
+        [
+          "low",
+          1
+        ]
+      ]
+    }
+  ]
+}

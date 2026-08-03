@@ -1,0 +1,360 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://instamart-analyser.local/schemas/enriched-feedback.schema.json",
+  "title": "EnrichedFeedback",
+  "description": "Feedback record after AI/rule-based enrichment with taxonomy labels",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source",
+    "body_text",
+    "taxonomy_version",
+    "enriched_at",
+    "enrichment_model",
+    "sentiment",
+    "shopping_mission",
+    "barriers",
+    "confidence_scores"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "play_store",
+        "app_store",
+        "reddit",
+        "twitter",
+        "youtube",
+        "mouthshut",
+        "quora",
+        "facebook",
+        "other"
+      ]
+    },
+    "body_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "enriched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "enrichment_model": {
+      "type": "string",
+      "description": "Model or prompt version used for enrichment"
+    },
+    "categories_mentioned": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/category" },
+      "uniqueItems": true
+    },
+    "adjacent_category_opportunity": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/category" },
+      "uniqueItems": true,
+      "description": "Categories the user could explore but hasn't"
+    },
+    "shopping_mission": {
+      "$ref": "#/$defs/shopping_mission"
+    },
+    "barriers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/barrier" },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "triggers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/trigger" },
+      "uniqueItems": true
+    },
+    "discovery_channels": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/discovery_channel" },
+      "uniqueItems": true
+    },
+    "discovery_trigger": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/discovery_trigger" },
+      "uniqueItems": true
+    },
+    "friction_types": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/friction_type" },
+      "uniqueItems": true
+    },
+    "sentiment": {
+      "$ref": "#/$defs/sentiment"
+    },
+    "trust_concerns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/trust_concern" },
+      "uniqueItems": true
+    },
+    "price_concerns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/price_concern" },
+      "uniqueItems": true
+    },
+    "assortment_concerns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assortment_concern" },
+      "uniqueItems": true
+    },
+    "information_gaps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/information_gap" },
+      "uniqueItems": true
+    },
+    "category_exploration_barrier": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/category_exploration_barrier" },
+      "uniqueItems": true
+    },
+    "experimentation_likelihood": {
+      "$ref": "#/$defs/experimentation_likelihood"
+    },
+    "required_trust_signal": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/required_trust_signal" },
+      "uniqueItems": true
+    },
+    "user_segment_hypothesis": {
+      "$ref": "#/$defs/user_segment"
+    },
+    "habit_signal": {
+      "type": "boolean"
+    },
+    "experimentation_signal": {
+      "type": "boolean"
+    },
+    "urgency_context": {
+      "type": "boolean"
+    },
+    "convenience_signal": {
+      "type": "boolean"
+    },
+    "occasion_context": {
+      "type": "string",
+      "description": "Free-text occasion if applicable"
+    },
+    "confidence_scores": {
+      "type": "object",
+      "required": ["overall"],
+      "properties": {
+        "overall": { "type": "number", "minimum": 0, "maximum": 1 },
+        "barriers": { "type": "number", "minimum": 0, "maximum": 1 },
+        "shopping_mission": { "type": "number", "minimum": 0, "maximum": 1 },
+        "sentiment": { "type": "number", "minimum": 0, "maximum": 1 },
+        "user_segment": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected", "needs_review"],
+      "default": "pending"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "grocery",
+        "snacks_beverages",
+        "household_essentials",
+        "personal_care",
+        "baby_products",
+        "pet_supplies",
+        "home_needs",
+        "health_wellness",
+        "other"
+      ]
+    },
+    "shopping_mission": {
+      "type": "string",
+      "enum": [
+        "replenishment",
+        "urgent_need",
+        "browse_discover",
+        "deal_hunting",
+        "occasion_based",
+        "recipe_driven",
+        "planned_purchase",
+        "impulse_purchase",
+        "emergency_purchase",
+        "exploration",
+        "other"
+      ]
+    },
+    "barrier": {
+      "type": "string",
+      "enum": [
+        "habit_lock_in",
+        "poor_discovery",
+        "low_awareness",
+        "trust_quality",
+        "price_sensitivity",
+        "assortment_gap",
+        "information_gap",
+        "cognitive_overload",
+        "mission_narrowness",
+        "past_bad_experience",
+        "delivery_fee_threshold",
+        "other"
+      ]
+    },
+    "trigger": {
+      "type": "string",
+      "enum": [
+        "life_event",
+        "promotion_offer",
+        "recommendation",
+        "out_of_stock_substitute",
+        "seasonal_need",
+        "bundle_combo",
+        "search_intent",
+        "homepage_feature",
+        "other"
+      ]
+    },
+    "discovery_channel": {
+      "type": "string",
+      "enum": [
+        "search",
+        "reorder_previous",
+        "homepage_browse",
+        "recommendation_engine",
+        "promotional_banner",
+        "external_referral",
+        "notification",
+        "other"
+      ]
+    },
+    "discovery_trigger": {
+      "type": "string",
+      "enum": [
+        "search",
+        "recommendation",
+        "offers",
+        "previous_orders",
+        "homepage_category_browsing",
+        "external_influence",
+        "other"
+      ]
+    },
+    "friction_type": {
+      "type": "string",
+      "enum": [
+        "app_performance",
+        "search_relevance",
+        "navigation_ux",
+        "checkout_payment",
+        "delivery_experience",
+        "pricing_transparency",
+        "product_information",
+        "customer_support",
+        "other"
+      ]
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": ["positive", "negative", "mixed", "neutral"]
+    },
+    "trust_concern": {
+      "type": "string",
+      "enum": [
+        "authenticity",
+        "freshness_expiry",
+        "packaging_damage",
+        "counterfeit_fear",
+        "brand_reliability",
+        "other"
+      ]
+    },
+    "price_concern": {
+      "type": "string",
+      "enum": [
+        "too_expensive",
+        "better_price_elsewhere",
+        "delivery_fee",
+        "minimum_order",
+        "misleading_discount",
+        "other"
+      ]
+    },
+    "assortment_concern": {
+      "type": "string",
+      "enum": [
+        "brand_missing",
+        "sku_missing",
+        "limited_variety",
+        "out_of_stock",
+        "other"
+      ]
+    },
+    "information_gap": {
+      "type": "string",
+      "enum": [
+        "no_reviews",
+        "no_ingredients",
+        "no_size_guide",
+        "no_comparison",
+        "unclear_category_placement",
+        "other"
+      ]
+    },
+    "category_exploration_barrier": {
+      "type": "string",
+      "enum": [
+        "lack_of_trust",
+        "lack_of_information",
+        "price_uncertainty",
+        "habit_lock_in",
+        "unavailable_products",
+        "poor_discovery",
+        "other"
+      ]
+    },
+    "experimentation_likelihood": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "required_trust_signal": {
+      "type": "string",
+      "enum": [
+        "reviews",
+        "ratings",
+        "guarantees",
+        "recommendations",
+        "comparisons",
+        "return_policy",
+        "other"
+      ]
+    },
+    "user_segment": {
+      "type": "string",
+      "enum": [
+        "new_user",
+        "habitual_replenisher",
+        "deal_seeker",
+        "family_household",
+        "single_professional",
+        "student",
+        "parent",
+        "pet_owner",
+        "health_conscious",
+        "explorer",
+        "other"
+      ]
+    }
+  }
+}

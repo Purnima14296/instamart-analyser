@@ -1,0 +1,273 @@
+{
+  "total_reviews": 969,
+  "by_source": {
+    "play_store": 937,
+    "app_store": 12,
+    "reddit": 5,
+    "mouthshut": 4,
+    "quora": 3,
+    "youtube": 3,
+    "twitter": 3,
+    "facebook": 2
+  },
+  "rating_distribution": {
+    "1": 770,
+    "2": 50,
+    "3": 23,
+    "4": 29,
+    "5": 77
+  },
+  "negative_review_pct": 81.1,
+  "word_count": {
+    "min": 5,
+    "max": 167,
+    "avg": 44.2,
+    "median": 41,
+    "short_lte_15": 158,
+    "medium_16_50": 429,
+    "long_gt_50": 382,
+    "long_pct": 39.4
+  },
+  "sentiment_hint": {
+    "negative": 366,
+    "positive": 104,
+    "neutral": 499
+  },
+  "theme_signal_counts": {
+    "delivery_speed": 441,
+    "app_ux_discovery": 436,
+    "customer_support": 394,
+    "pricing_offers": 253,
+    "delivery_quality": 182,
+    "product_quality": 112,
+    "habit_reorder": 101,
+    "comparison_competitor": 88,
+    "category_exploration": 61
+  },
+  "multi_theme_reviews": 628,
+  "no_theme_signal_reviews": 102,
+  "theme_by_rating": {
+    "delivery_speed": {
+      "1": 359,
+      "3": 11,
+      "4": 16,
+      "5": 23,
+      "2": 24
+    },
+    "delivery_quality": {
+      "1": 169,
+      "3": 3,
+      "2": 6,
+      "5": 1,
+      "4": 1
+    },
+    "customer_support": {
+      "1": 372,
+      "3": 2,
+      "5": 6,
+      "2": 12,
+      "4": 1
+    },
+    "pricing_offers": {
+      "1": 205,
+      "5": 23,
+      "4": 8,
+      "2": 10,
+      "3": 6
+    },
+    "product_quality": {
+      "1": 97,
+      "3": 3,
+      "2": 5,
+      "4": 1,
+      "5": 4
+    },
+    "app_ux_discovery": {
+      "1": 349,
+      "3": 8,
+      "5": 34,
+      "2": 22,
+      "4": 11
+    },
+    "comparison_competitor": {
+      "1": 70,
+      "4": 2,
+      "3": 2,
+      "5": 3,
+      "2": 6
+    },
+    "habit_reorder": {
+      "1": 89,
+      "4": 3,
+      "5": 2,
+      "3": 2,
+      "2": 1
+    },
+    "category_exploration": {
+      "4": 3,
+      "2": 3,
+      "5": 6,
+      "1": 35,
+      "3": 1
+    }
+  },
+  "top_bigrams": [
+    [
+      "swiggy instamart",
+      257
+    ],
+    [
+      "from instamart",
+      123
+    ],
+    [
+      "instamart and",
+      91
+    ],
+    [
+      "the order",
+      90
+    ],
+    [
+      "they are",
+      75
+    ],
+    [
+      "from swiggy",
+      67
+    ],
+    [
+      "the app",
+      64
+    ],
+    [
+      "and the",
+      60
+    ],
+    [
+      "with swiggy",
+      59
+    ],
+    [
+      "the worst",
+      54
+    ],
+    [
+      "and they",
+      53
+    ],
+    [
+      "the delivery",
+      49
+    ],
+    [
+      "the customer",
+      45
+    ],
+    [
+      "the issue",
+      44
+    ],
+    [
+      "instamart order",
+      43
+    ],
+    [
+      "for instamart",
+      43
+    ],
+    [
+      "and instamart",
+      43
+    ],
+    [
+      "the same",
+      41
+    ],
+    [
+      "for the",
+      40
+    ],
+    [
+      "they will",
+      39
+    ]
+  ],
+  "top_trigrams": [
+    [
+      "with swiggy instamart",
+      39
+    ],
+    [
+      "from swiggy instamart",
+      36
+    ],
+    [
+      "experience with swiggy",
+      35
+    ],
+    [
+      "from instamart and",
+      29
+    ],
+    [
+      "swiggy and instamart",
+      18
+    ],
+    [
+      "swiggy instamart they",
+      17
+    ],
+    [
+      "they are not",
+      16
+    ],
+    [
+      "items from instamart",
+      14
+    ],
+    [
+      "experience with instamart",
+      14
+    ],
+    [
+      "swiggy instamart and",
+      14
+    ],
+    [
+      "instamart and swiggy",
+      14
+    ],
+    [
+      "the customer care",
+      13
+    ],
+    [
+      "swiggy instamart the",
+      12
+    ],
+    [
+      "the delivery partner",
+      12
+    ],
+    [
+      "swiggy instamart has",
+      12
+    ]
+  ],
+  "llm_batch_recommendation": {
+    "strategy": "per_record_classification",
+    "rationale": "969 reviews with avg ~44.2 words each. Per-record Groq calls with taxonomy prompt keep traceability. Avoid dumping all reviews in one prompt.",
+    "recommended_batch_size": 20,
+    "estimated_groq_calls": 969,
+    "estimated_tokens_per_review": 57,
+    "phase_3_aggregation": "group enriched records by barrier + mission labels, then Groq synthesizes themes from top clusters only",
+    "do_before_llm": [
+      "Run keyword theme signals (done in this analysis) to validate taxonomy coverage",
+      "Sample 30 reviews for manual gold-label set",
+      "Split Play Store dominant source (96%) \u2014 weight insights by source diversity",
+      "Flag reviews >50 words for higher max_tokens",
+      "Deduplicate near-identical complaints before enrichment"
+    ]
+  }
+}

@@ -1,0 +1,644 @@
+{
+  "created_at": "2026-07-28T19:43:07+00:00",
+  "dry_run": true,
+  "insight_count": 10,
+  "error_count": 0,
+  "insights": [
+    {
+      "insight_id": "insight_d925042f",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit trust quality barriers around grocery, which limits broader category exploration.",
+      "confidence": "high",
+      "analysis_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "theme_ids": [
+        "trust_quality__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "trust_quality"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "033815f2-86e3-4928-b57b-c30bc5ac361a",
+          "source": "play_store",
+          "snippet": "Never shop on Swigg or Instamart. These apps only take money from you and make you wait for 5 to 7 days in the name of refund and their executives also do not good"
+        },
+        {
+          "record_id": "03c5f585-e23e-4c3f-89c4-a94e821d05ec",
+          "source": "play_store",
+          "snippet": "I placed an order on the Baje app, but I cancelled it because of an address issue. You still have not given my refund back. Customer service is also not responding. The refund is still not showing in my account from Baj..."
+        },
+        {
+          "record_id": "044cf26f-3376-4ff3-8f91-9db2fe4fea91",
+          "source": "play_store",
+          "snippet": "Typical Third world app. Not reliable. Instamart sends expired goods, delivery partners are always late, orders are misplaced."
+        },
+        {
+          "record_id": "09a30f02-8f7f-4340-8c0a-cca0f0dfeafd",
+          "source": "play_store",
+          "snippet": "I'll order insta mart for my grocery need 3 to 5 times experience was good ,today I'll order something grocery like egg 148 rupees 12 egg it's big brand egg but they deliverd me the egg expire in 1 week, I thought ok no..."
+        },
+        {
+          "record_id": "0e3dd168-f779-43c9-a359-4dd63fb5080c",
+          "source": "play_store",
+          "snippet": "Very disappointed with the service from Instamart. Got a product delivered which expired a month ago and while raising the issue, they gave me a long list of procedures to follow while the simplest thing they can do is..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 24,
+        "mouthshut": 1
+      },
+      "total_supporting_records": 25,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address trust quality for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 5,
+        "traceability": 5,
+        "relevance": 4,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 22
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_b92d1ed9",
+      "status": "draft",
+      "statement": "Users in browse discover missions repeatedly hit other barriers around grocery, which limits broader category exploration.",
+      "confidence": "low",
+      "analysis_question_ids": [
+        "Q11"
+      ],
+      "theme_ids": [
+        "other__browse_discover__grocery"
+      ],
+      "primary_barriers": [
+        "other"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "00ecd32a-c503-437a-8bfd-3e33180ff388",
+          "source": "play_store",
+          "snippet": "Nice app for foodie lovers and also given more coupons for swiggy to instamart and vice versa."
+        },
+        {
+          "record_id": "1becca77-7c9b-44cf-bf24-340209dca07c",
+          "source": "play_store",
+          "snippet": "Thanks for fixing all issues. Can you create a way to order from instamart + food orders in a single delivery. Like let's say I want some fruits + protein milk + a restaurant order in a single delivery. I don't want it..."
+        },
+        {
+          "record_id": "345b7066-f784-46bb-9f2c-1d987bfdc450",
+          "source": "play_store",
+          "snippet": "relly good app you should defenetly get this app because it get get u food from mostly anywhere near u and has a lot of offers in the groceries option (instamart) where u can get things from toffies to literal part spea..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 3
+      },
+      "total_supporting_records": 3,
+      "affected_segment": "explorer",
+      "business_implication": "Instamart should address other for explorer users during browse discover journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 3,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 3,
+        "clarity": 3,
+        "total": 17
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_017b84d3",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit past bad experience barriers around grocery, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q4",
+        "Q6"
+      ],
+      "theme_ids": [
+        "past_bad_experience__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "past_bad_experience"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "013268dc-3933-4496-b005-5bafe1331df8",
+          "source": "play_store",
+          "snippet": "Using swiggy from many years but still i would say never seen such third class service no matter if u ordering food or grocery you will be disappointed First of all they always fail to deliver on time app will show you..."
+        },
+        {
+          "record_id": "06f7e4c6-e695-4726-8a1a-52055bf25c79",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart customer care is non respondent, I have received wrong items and the customer care told me to email the support, it's been one month and no one from Swiggy has responded back. Better to order from other..."
+        },
+        {
+          "record_id": "09892675-f511-49a8-a026-98d58d8be9e9",
+          "source": "play_store",
+          "snippet": "I am beyond disappointed with Swiggy's Instamart—this is absolutely the worst experience I have ever had with a delivery app. I ordered an item, but due to unforeseen circumstances, I had to cancel it. Shockingly, they..."
+        },
+        {
+          "record_id": "0af67818-6c38-46d9-9535-f0fe6a2fadee",
+          "source": "play_store",
+          "snippet": "worst experience. Will not buy from Swiggy again. One item was missing from my order and I provided them with the photos and everything and they just closed the case without even having proper checking. WILL NOT BUY FRO..."
+        },
+        {
+          "record_id": "0b8b4595-81ea-43bd-ba32-1a251331fde4",
+          "source": "play_store",
+          "snippet": "I got wronge item in instamart don't use this app and they took more than 30min to talk"
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 11
+      },
+      "total_supporting_records": 11,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address past bad experience for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 5,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 21
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_165705d9",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit trust quality barriers around other, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q4",
+        "Q10"
+      ],
+      "theme_ids": [
+        "trust_quality__replenishment__other"
+      ],
+      "primary_barriers": [
+        "trust_quality"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "002e884c-e154-4b58-9bfd-0de30c1b851c",
+          "source": "play_store",
+          "snippet": "uninstalling the app.. instamart version is very poor. They didn't give refund on time.. also give poor items. didn't reply neatly. very bad experience."
+        },
+        {
+          "record_id": "04bb8348-5b5f-48e7-add8-f1103ddb62b8",
+          "source": "play_store",
+          "snippet": "I wish I was able to give zero rating to this app after facing SWIGGY INSTAMART service delivery partner refusing to deliver product at doorstep as advertised by company policy and half empty hair oil bottles and no sol..."
+        },
+        {
+          "record_id": "0eda57fa-c576-484d-be1f-7b2613b64a6b",
+          "source": "play_store",
+          "snippet": "My recent experience with Swiggy instamart has been extremely disappointing. They charge extra money without consulting me. When I asked for the refund they didn't even resolve the issue, nor response my mail."
+        },
+        {
+          "record_id": "1af38dd8-db4a-4feb-ad69-5ff2351f67ee",
+          "source": "play_store",
+          "snippet": "instamart is cheap app i ordered worth rs376 including daily 9rs offer i paid in phonepe, app show one item worth rs175 wasn't available they said amount was credited after delivery finished i accept the order I only re..."
+        },
+        {
+          "record_id": "1ff3ec24-19ea-4905-9522-fb1429250603",
+          "source": "play_store",
+          "snippet": "I ordered food and the delivery driver gave me food that he has bought for himself and took my food. Eventhough I told him many times that it is not my food he said he only have this particular order. Then he came again..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 8
+      },
+      "total_supporting_records": 8,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address trust quality for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 4,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 21
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_2f21839c",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit other barriers around grocery, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q11"
+      ],
+      "theme_ids": [
+        "other__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "other"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "002c5ea4-70ae-4c95-81f4-c224b66802c8",
+          "source": "play_store",
+          "snippet": "Best Especially Instamart price are really very low compared to other apps like zepto and minutes.. i always ordered big list only on Swiggy insta mart it saves my money really well thanks you Swiggy keep it up."
+        },
+        {
+          "record_id": "0d54f928-73e2-44fc-a61e-2357c448ffe3",
+          "source": "play_store",
+          "snippet": "I'm very happy to this kind of service thanks Instamart"
+        },
+        {
+          "record_id": "15d09116-03cb-4386-9343-e85a6e6b8196",
+          "source": "play_store",
+          "snippet": "After my last complaint about instamart amul milk which got spoiled recently ordered milk it was good. swiggy has taken action about it. but not given me compensation about spoiled milk only asked me batch number and or..."
+        },
+        {
+          "record_id": "1e9e6972-6854-4064-a975-b4c6d98298c1",
+          "source": "play_store",
+          "snippet": "Best app for Instamart and for food it is classy i really really loved my Swiggy app always provides me low prices and also many a lot coupon codes also tastes are always much better bestsellers are available there best..."
+        },
+        {
+          "record_id": "2219c456-ece7-42b6-8b8d-05acc160f353",
+          "source": "play_store",
+          "snippet": "once I order something from Instamart and then go to the delevery page app is continuously crashing not once but happening continuously from few days and all for both for ordering food and grocery"
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 7
+      },
+      "total_supporting_records": 7,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address other for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 3,
+        "clarity": 4,
+        "total": 19
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_4faef10a",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit delivery fee threshold barriers around grocery, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q10"
+      ],
+      "theme_ids": [
+        "delivery_fee_threshold__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "delivery_fee_threshold"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "02082c2d-2da5-4ec3-bc02-5f32a196fc43",
+          "source": "play_store",
+          "snippet": "the app works good except zepto delivers in half the time of instamart deliveries. and some of the delivery agents on swiggy do not know how to read english or even other languages- and hence mess up the orders. so I wo..."
+        },
+        {
+          "record_id": "06ebf68f-7ec0-408d-aec3-880b0f74f0ec",
+          "source": "play_store",
+          "snippet": "wich I could give zero star to instamart from last few order it takes more than 1 hr to deliver in other apps like blinkit or zepto take one 5 to 7 min max"
+        },
+        {
+          "record_id": "1d19549f-1715-4b5f-a0d6-c9b3cef6912f",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart is the biggest quick commerce scam! It will first show you 10 minutes, then for another 5 minutes no delivery partner will assign. Then after 10 minutes the delivery partner is assigned with near by del..."
+        },
+        {
+          "record_id": "1db00be6-a240-4778-bfd2-963b424efc60",
+          "source": "play_store",
+          "snippet": "Worst delivery experience ever with Swiggy Instamart. You claim to be an e-commerce platform offering quick 10-minute deliveries, but today was a complete joke. First, the app showed an estimated time of 40–45 minutes (..."
+        },
+        {
+          "record_id": "292803ad-929a-4822-888e-0aed42adc121",
+          "source": "play_store",
+          "snippet": "ye app bas kuch din hi time pe delivery deti hai insta mart iska uske baad agar aap order krte rhte ho to ye order late krte hai delivery boy pta ni kesa lgaya hai lacation ka jisko pta nhi hai seriously itna ganda expe..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 7
+      },
+      "total_supporting_records": 7,
+      "affected_segment": "habitual_replenisher",
+      "business_implication": "Instamart should address delivery fee threshold for habitual replenisher users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 20
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_eb266bbb",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit past bad experience barriers around other, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q4",
+        "Q6"
+      ],
+      "theme_ids": [
+        "past_bad_experience__replenishment__other"
+      ],
+      "primary_barriers": [
+        "past_bad_experience"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "019ddbb8-988d-47b7-8d7b-9e63ce05f583",
+          "source": "play_store",
+          "snippet": "Very disappointing experience with Instamart. The app showed an estimated delivery time of around 15 minutes, but even after waiting for almost 1 hour the order was still not delivered. Customer support kept extending t..."
+        },
+        {
+          "record_id": "096ca6d6-f6de-40b5-9101-86f9f3974300",
+          "source": "play_store",
+          "snippet": "Ordered milk on Insta Mart - delivered curdled. Got a coupon after multiple follow-ups, but it doesn't work. Price stays the same, UPI payment gets stuck, then coupon vanishes before 30-day expiry."
+        },
+        {
+          "record_id": "0e5a8f74-0859-4219-acc9-26348c3d4819",
+          "source": "play_store",
+          "snippet": "i got a defective product from swiggy instamart when i reach out to customer support from the app they are saying reachout to us via mail and in the mail there is no response from the instamart team instamrt is trying t..."
+        },
+        {
+          "record_id": "0f17295e-8b7b-46b9-8929-c9c53c798b45",
+          "source": "play_store",
+          "snippet": "Such worst platform takes ages for a basic issues to resolve and then sends worst system generated response.when other platforms provide quick support for customers. You are lucky if you get correct delivery but if anyt..."
+        },
+        {
+          "record_id": "19e12894-f7ce-446e-8aba-9908b0fbdfc8",
+          "source": "play_store",
+          "snippet": "don't use this app because every time they have any other reasons. I didn't get all items in Instamart but I paid for all items reported this issue with agent they are providing me a coupon why should I accept.when I pa..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 6
+      },
+      "total_supporting_records": 6,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address past bad experience for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 20
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_b0de365d",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit poor discovery barriers around grocery, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q2",
+        "Q3",
+        "Q9"
+      ],
+      "theme_ids": [
+        "poor_discovery__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "poor_discovery"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "040c4820-d276-4cfa-8a95-97dd7e0ae8d1",
+          "source": "youtube",
+          "snippet": "YouTube review comment: Compared Instamart, Blinkit and Zepto — Instamart has the best delivery but worst category browsing. I still only buy groceries there."
+        },
+        {
+          "record_id": "1b1dacb2-c212-4e27-b2da-f1f31a7af2f1",
+          "source": "play_store",
+          "snippet": "I ordered some vegetables and hair oil in swing instamart , hair oil missing in the order,no one is not responding it, vegetables also not good, I raise the quality issue, refund the money, but amount not credit in my a..."
+        },
+        {
+          "record_id": "1dcfab29-311e-494a-82f4-13057a980152",
+          "source": "play_store",
+          "snippet": "now a days very pure quality items are coming in instamart espaecially vegetables and fruits. purposefully made the point no replacement. so very few amount only refunded."
+        },
+        {
+          "record_id": "1e78e3f7-ea27-47d5-b820-7330b36ef0f0",
+          "source": "play_store",
+          "snippet": "Instamart worst service, Many items missing in supply.. For getting refund multiple follow ups required"
+        },
+        {
+          "record_id": "32551221-9b7c-472a-a8ac-83e246edd0aa",
+          "source": "play_store",
+          "snippet": "swiggy became worse especially for Instamart orders. I don't know if they purposefully miss items. This happened to me 2 times in last 10 days. The delays after showing that delivery will reach us in 9 mins is a joke."
+        }
+      ],
+      "source_breakdown": {
+        "youtube": 1,
+        "play_store": 5
+      },
+      "total_supporting_records": 6,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address poor discovery for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 4,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 21
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_223df075",
+      "status": "draft",
+      "statement": "Users in urgent need missions repeatedly hit delivery fee threshold barriers around other, which limits broader category exploration.",
+      "confidence": "low",
+      "analysis_question_ids": [
+        "Q10"
+      ],
+      "theme_ids": [
+        "delivery_fee_threshold__urgent_need__other"
+      ],
+      "primary_barriers": [
+        "delivery_fee_threshold"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "25eef73b-ca88-4f8b-9473-02b34809142e",
+          "source": "play_store",
+          "snippet": "Worst experience. High payment failures. Delivery partner is arrogant, he shouted. Takes order but, is unable to find delivery partners (tried with multiple deliveries). Customer care is of no help. Refund takes 3-7 day..."
+        },
+        {
+          "record_id": "27a9dc13-f66f-4571-82c6-07820022a867",
+          "source": "play_store",
+          "snippet": "Highly Disappointed they promise 10 minutes delivery which is delayed by 30 minutes or more when you don't have delivery partners then why you pick orders? Same on INSTAMART and SWIGGY FOOD They don't have fast service..."
+        },
+        {
+          "record_id": "44d671f2-5528-48f8-a64a-ba8820c7d013",
+          "source": "play_store",
+          "snippet": "I have ordered from Instamart and showed 20 mins ....after 20 mins it's again showed another 20 mins time saying that there are no delivery partner .......they are charging extra as high demand fee as well........if the..."
+        },
+        {
+          "record_id": "4c27b8b2-1c68-49dc-b82a-be9de56cf0e8",
+          "source": "play_store",
+          "snippet": "worst ever app found in the world, I have ordered few items in Instamart but after 35 mins also I didn't receive the order and not the delivery boy started and when I call the number provided after the order is confirme..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 4
+      },
+      "total_supporting_records": 4,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address delivery fee threshold for family household users during urgent need journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 3,
+        "traceability": 5,
+        "relevance": 3,
+        "actionability": 4,
+        "clarity": 3,
+        "total": 18
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    },
+    {
+      "insight_id": "insight_1dbe90c6",
+      "status": "draft",
+      "statement": "Users in replenishment missions repeatedly hit habit lock in barriers around grocery, which limits broader category exploration.",
+      "confidence": "medium",
+      "analysis_question_ids": [
+        "Q1",
+        "Q4",
+        "Q9"
+      ],
+      "theme_ids": [
+        "habit_lock_in__replenishment__grocery"
+      ],
+      "primary_barriers": [
+        "habit_lock_in"
+      ],
+      "primary_triggers": [],
+      "supporting_evidence": [
+        {
+          "record_id": "086df1c8-f757-47f9-8b08-8d0c1d103f63",
+          "source": "play_store",
+          "snippet": "I am regularly buy goods from Instamart but they are not introduced me any offer such a bad app"
+        },
+        {
+          "record_id": "1dcd43f1-59e5-455a-94cd-a34d6b0b3020",
+          "source": "play_store",
+          "snippet": "worst app and bad service, go better app to Instamart jio mart"
+        },
+        {
+          "record_id": "22b5d4ca-f3d5-4888-aea3-0cce86bf4315",
+          "source": "play_store",
+          "snippet": "Update 2026: Uninstalling and never using this app. So many reasons. Onboarding bad unhygienic restaurants. too much delay, shortage of delivery agents, extremely bad support with useless AI bot, no option to speak with..."
+        },
+        {
+          "record_id": "24811a7e-9e42-47a6-acdb-445e568c75d5",
+          "source": "play_store",
+          "snippet": "Third class app now, unistalled it, it was great in past but now it totally sucks, even instamart as well, unresponsive customer service, always complaint about their limitations and replacement, no change for cash, une..."
+        },
+        {
+          "record_id": "40e1555e-d3e0-4ec2-b142-659e45705c0b",
+          "source": "play_store",
+          "snippet": "a bad app which never offers service on time. instamart has no return policy. so irritating customer care. never responds on time while booking food on time. it took 2 hours for delivering a food that too a far of 3 kms..."
+        }
+      ],
+      "source_breakdown": {
+        "play_store": 5
+      },
+      "total_supporting_records": 5,
+      "affected_segment": "family_household",
+      "business_implication": "Instamart should address habit lock in for family household users during replenishment journeys before expecting stronger cross-category expansion.",
+      "open_questions": [
+        "Would this pattern hold across a larger and more source-diverse sample?",
+        "Which product surface should be changed first to reduce this barrier?"
+      ],
+      "quality_score": {
+        "evidence_strength": 4,
+        "traceability": 5,
+        "relevance": 4,
+        "actionability": 4,
+        "clarity": 4,
+        "total": 21
+      },
+      "taxonomy_version": "1.1.0",
+      "created_at": "2026-07-28T19:43:07+00:00",
+      "updated_at": "2026-07-28T19:43:07+00:00"
+    }
+  ],
+  "errors": []
+}

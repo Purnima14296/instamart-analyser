@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-07-28T17:41:05+00:00",
+  "instructions": "Copy this template into stakeholder-feedback-responses.json and add one object per reviewer under responses[]. Mark status as incorporated, deferred, or open.",
+  "roles": [
+    "product",
+    "research",
+    "growth"
+  ],
+  "questions": [
+    "Are the insights understandable without the author present?",
+    "Do the top opportunities feel evidence-backed?",
+    "Which hypothesis would you test first?",
+    "What assumptions worry you most?",
+    "What is missing before you would greenlight an experiment?"
+  ],
+  "response_schema": {
+    "reviewer": "name",
+    "role": "product|research|growth",
+    "overall_usefulness": "high|medium|low",
+    "trust_in_outputs": "high|medium|low",
+    "would_use_for_experiment_planning": true,
+    "comments": [],
+    "defects": [
+      {
+        "issue": "short description",
+        "severity": "high|medium|low",
+        "status": "open|incorporated|deferred"
+      }
+    ]
+  }
+}

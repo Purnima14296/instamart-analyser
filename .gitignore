@@ -1,0 +1,36 @@
+# Secrets / local env
+.env
+.env.*
+!.env.example
+web/.env
+web/.env.local
+web/.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+web/node_modules/
+web/dist/
+web/dist-ssr/
+
+# Logs and local tooling
+logs/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.sw?
+
+# Selenium / browser junk
+*.crdownload
+
+# Large local-only scrapes (keep summary artifacts; ignore huge raw dumps if needed)
+# data/phase-1/raw/ is small enough for pilot deploys — leave tracked by default

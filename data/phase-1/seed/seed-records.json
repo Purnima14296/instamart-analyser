@@ -1,0 +1,44 @@
+{
+  "description": "Instamart-only seed dataset",
+  "records": [
+    {
+      "source": "play_store",
+      "source_record_id": "seed_play_001",
+      "body_text": "Instamart is my go-to for weekly groceries. Same milk, bread, eggs every time. Never explored other categories.",
+      "language": "en",
+      "rating": 4,
+      "metadata": {"seed": true}
+    },
+    {
+      "source": "play_store",
+      "source_record_id": "seed_play_002",
+      "body_text": "Instamart personal care section feels overpriced. I only order snacks and drinks on Instamart.",
+      "language": "en",
+      "rating": 3,
+      "metadata": {"seed": true}
+    },
+    {
+      "source": "app_store",
+      "source_record_id": "seed_ios_001",
+      "body_text": "Instamart grocery orders are fast but I stick to the same list. The reorder button makes it too easy.",
+      "language": "en",
+      "rating": 4,
+      "metadata": {"seed": true}
+    },
+    {
+      "source": "reddit",
+      "source_record_id": "seed_reddit_001",
+      "body_text": "Anyone else only use Instamart for groceries? I had no idea Instamart sells pet supplies until my neighbour mentioned it.",
+      "language": "en",
+      "title": "Instamart category discovery",
+      "metadata": {"subreddit": "swiggy", "seed": true}
+    },
+    {
+      "source": "reddit",
+      "source_record_id": "seed_reddit_002",
+      "body_text": "Instamart search is bad for finding niche health products. Gave up and reordered dal instead.",
+      "language": "en",
+      "metadata": {"subreddit": "india", "seed": true}
+    }
+  ]
+}

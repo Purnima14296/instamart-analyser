@@ -1,0 +1,33 @@
+{
+  "description": "Instamart-only social media seed data",
+  "records": [
+    {
+      "source": "youtube",
+      "source_record_id": "seed_yt_001",
+      "body_text": "I only use Instamart for late night snack runs. Never scrolled to see Instamart sells cleaning supplies and personal care.",
+      "language": "en",
+      "metadata": {"category": "social_media", "platform": "youtube"}
+    },
+    {
+      "source": "youtube",
+      "source_record_id": "seed_yt_002",
+      "body_text": "Instamart has the best delivery but worst category browsing. I still only buy groceries on Instamart.",
+      "language": "en",
+      "metadata": {"category": "social_media", "platform": "youtube"}
+    },
+    {
+      "source": "twitter",
+      "source_record_id": "seed_tw_001",
+      "body_text": "Instamart is great for groceries but personal care prices are high. I literally only order milk and bread from Instamart every day.",
+      "language": "en",
+      "metadata": {"category": "social_media", "platform": "twitter"}
+    },
+    {
+      "source": "twitter",
+      "source_record_id": "seed_tw_002",
+      "body_text": "Pro tip: Instamart has pet food now! Took me 6 months of daily Instamart orders to find out.",
+      "language": "en",
+      "metadata": {"category": "social_media", "platform": "twitter"}
+    }
+  ]
+}

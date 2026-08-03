@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-07-28T17:41:05+00:00",
+  "updated_at": "2026-07-30T15:48:29+00:00",
+  "responses": [
+    {
+      "reviewer": "pilot_seed_product",
+      "role": "product",
+      "overall_usefulness": "high",
+      "trust_in_outputs": "medium",
+      "would_use_for_experiment_planning": true,
+      "comments": [
+        "Trust-before-cross-sell framing is clear and actionable.",
+        "Need more non-Play-Store evidence before committing roadmap capacity."
+      ],
+      "defects": [
+        {
+          "issue": "Enrichment still covers only a partial cohort",
+          "severity": "medium",
+          "status": "deferred"
+        }
+      ]
+    },
+    {
+      "reviewer": "pilot_seed_growth",
+      "role": "growth",
+      "overall_usefulness": "high",
+      "trust_in_outputs": "medium",
+      "would_use_for_experiment_planning": true,
+      "comments": [
+        "Hypothesis backlog is specific enough to start experiment design.",
+        "Guardrails around refund/support rates are important for trust experiments."
+      ],
+      "defects": [
+        {
+          "issue": "Primary metrics should be tied to segment eligibility rules",
+          "severity": "medium",
+          "status": "open"
+        }
+      ]
+    },
+    {
+      "reviewer": "pilot_seed_research",
+      "role": "research",
+      "overall_usefulness": "medium",
+      "trust_in_outputs": "medium",
+      "would_use_for_experiment_planning": true,
+      "comments": [
+        "Manual alignment with keyword themes is directionally reassuring.",
+        "Keep discovery findings labeled as secondary until source mix improves."
+      ],
+      "defects": [
+        {
+          "issue": "Complaint bias may inflate operational themes vs discovery themes",
+          "severity": "high",
+          "status": "incorporated"
+        }
+      ]
+    },
+    {
+      "reviewer": "smoke_tester",
+      "role": "growth",
+      "overall_usefulness": "high",
+      "trust_in_outputs": "medium",
+      "would_use_for_experiment_planning": true,
+      "comments": [
+        "Phase 6A API smoke test"
+      ],
+      "defects": []
+    },
+    {
+      "reviewer": "phase6c_validator",
+      "role": "research",
+      "overall_usefulness": "high",
+      "trust_in_outputs": "medium",
+      "would_use_for_experiment_planning": true,
+      "comments": [
+        "Phase 6C feedback sync check"
+      ],
+      "defects": [
+        {
+          "issue": "Need clearer quota messaging",
+          "severity": "low",
+          "status": "open"
+        }
+      ]
+    }
+  ],
+  "source": "phase6c_feedback_sync"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-07-30T15:48:30+00:00",
+  "response_count": 5,
+  "roles_represented": [
+    "growth",
+    "product",
+    "research"
+  ],
+  "usefulness_breakdown": {
+    "high": 4,
+    "medium": 1
+  },
+  "trust_breakdown": {
+    "medium": 5
+  },
+  "would_use_for_experiment_planning": 5,
+  "open_defect_count": 2,
+  "deferred_count": 1,
+  "incorporated_count": 1,
+  "defect_status_breakdown": {
+    "deferred": 1,
+    "open": 2,
+    "incorporated": 1
+  },
+  "open_defects": [
+    {
+      "reviewer": "pilot_seed_growth",
+      "role": "growth",
+      "issue": "Primary metrics should be tied to segment eligibility rules",
+      "severity": "medium",
+      "status": "open"
+    },
+    {
+      "reviewer": "phase6c_validator",
+      "role": "research",
+      "issue": "Need clearer quota messaging",
+      "severity": "low",
+      "status": "open"
+    }
+  ],
+  "deferred_items": [
+    {
+      "reviewer": "pilot_seed_product",
+      "role": "product",
+      "issue": "Enrichment still covers only a partial cohort",
+      "severity": "medium",
+      "status": "deferred"
+    }
+  ],
+  "incorporated_items": [
+    {
+      "reviewer": "pilot_seed_research",
+      "role": "research",
+      "issue": "Complaint bias may inflate operational themes vs discovery themes",
+      "severity": "high",
+      "status": "incorporated"
+    }
+  ],
+  "top_themes": [
+    "Trust-before-cross-sell framing is clear and actionable.",
+    "Need more non-Play-Store evidence before committing roadmap capacity.",
+    "Hypothesis backlog is specific enough to start experiment design.",
+    "Guardrails around refund/support rates are important for trust experiments.",
+    "Manual alignment with keyword themes is directionally reassuring.",
+    "Keep discovery findings labeled as secondary until source mix improves.",
+    "Phase 6A API smoke test",
+    "Phase 6C feedback sync check"
+  ],
+  "pilot_feedback_ready": true
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://instamart-analyser.local/schemas/feedback-record.schema.json",
+  "title": "FeedbackRecord",
+  "description": "Raw and normalized feedback record from any source",
+  "type": "object",
+  "required": [
+    "record_id",
+    "source",
+    "source_record_id",
+    "body_text",
+    "language",
+    "collected_at",
+    "collection_batch_id",
+    "pipeline_stage"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Internal UUID for this record"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "play_store",
+        "app_store",
+        "reddit",
+        "twitter",
+        "youtube",
+        "mouthshut",
+        "quora",
+        "facebook",
+        "other"
+      ]
+    },
+    "source_record_id": {
+      "type": "string",
+      "description": "Unique identifier from the source system"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "author": {
+      "type": "string",
+      "description": "Public handle only"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Original post/review timestamp (UTC)"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this record was ingested (UTC)"
+    },
+    "collection_batch_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rating": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$",
+      "description": "ISO 639-1 language code"
+    },
+    "pipeline_stage": {
+      "type": "string",
+      "enum": ["raw", "normalized"]
+    },
+    "normalized_text": {
+      "type": "string",
+      "description": "Cleaned text after normalization (normalized stage only)"
+    },
+    "dedupe_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of normalized text for deduplication"
+    },
+    "is_duplicate": {
+      "type": "boolean",
+      "default": false
+    },
+    "translation_applied": {
+      "type": "boolean",
+      "default": false
+    },
+    "original_language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Source-specific metadata (subreddit, app version, etc.)"
+    }
+  },
+  "additionalProperties": false
+}

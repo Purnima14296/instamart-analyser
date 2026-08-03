@@ -1,0 +1,180 @@
+{
+  "version": "1.1.0",
+  "platform": "swiggy_instamart",
+  "status": "approved",
+  "approved_at": "2026-07-28",
+  "dimensions": {
+    "categories": [
+      "grocery",
+      "snacks_beverages",
+      "household_essentials",
+      "personal_care",
+      "baby_products",
+      "pet_supplies",
+      "home_needs",
+      "health_wellness",
+      "other"
+    ],
+    "shopping_missions": [
+      "replenishment",
+      "urgent_need",
+      "browse_discover",
+      "deal_hunting",
+      "occasion_based",
+      "recipe_driven",
+      "planned_purchase",
+      "impulse_purchase",
+      "emergency_purchase",
+      "exploration",
+      "other"
+    ],
+    "barriers": [
+      "habit_lock_in",
+      "poor_discovery",
+      "low_awareness",
+      "trust_quality",
+      "price_sensitivity",
+      "assortment_gap",
+      "information_gap",
+      "cognitive_overload",
+      "mission_narrowness",
+      "past_bad_experience",
+      "delivery_fee_threshold",
+      "other"
+    ],
+    "triggers": [
+      "life_event",
+      "promotion_offer",
+      "recommendation",
+      "out_of_stock_substitute",
+      "seasonal_need",
+      "bundle_combo",
+      "search_intent",
+      "homepage_feature",
+      "other"
+    ],
+    "discovery_channels": [
+      "search",
+      "reorder_previous",
+      "homepage_browse",
+      "recommendation_engine",
+      "promotional_banner",
+      "external_referral",
+      "notification",
+      "other"
+    ],
+    "user_segments": [
+      "new_user",
+      "habitual_replenisher",
+      "deal_seeker",
+      "family_household",
+      "single_professional",
+      "student",
+      "parent",
+      "pet_owner",
+      "health_conscious",
+      "explorer",
+      "other"
+    ],
+    "friction_types": [
+      "app_performance",
+      "search_relevance",
+      "navigation_ux",
+      "checkout_payment",
+      "delivery_experience",
+      "pricing_transparency",
+      "product_information",
+      "customer_support",
+      "other"
+    ],
+    "sentiments": [
+      "positive",
+      "negative",
+      "mixed",
+      "neutral"
+    ],
+    "trust_concerns": [
+      "authenticity",
+      "freshness_expiry",
+      "packaging_damage",
+      "counterfeit_fear",
+      "brand_reliability",
+      "other"
+    ],
+    "price_concerns": [
+      "too_expensive",
+      "better_price_elsewhere",
+      "delivery_fee",
+      "minimum_order",
+      "misleading_discount",
+      "other"
+    ],
+    "assortment_concerns": [
+      "brand_missing",
+      "sku_missing",
+      "limited_variety",
+      "out_of_stock",
+      "other"
+    ],
+    "information_gaps": [
+      "no_reviews",
+      "no_ingredients",
+      "no_size_guide",
+      "no_comparison",
+      "unclear_category_placement",
+      "other"
+    ],
+    "discovery_triggers": [
+      "search",
+      "recommendation",
+      "offers",
+      "previous_orders",
+      "homepage_category_browsing",
+      "external_influence",
+      "other"
+    ],
+    "category_exploration_barriers": [
+      "lack_of_trust",
+      "lack_of_information",
+      "price_uncertainty",
+      "habit_lock_in",
+      "unavailable_products",
+      "poor_discovery",
+      "other"
+    ],
+    "experimentation_likelihood": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "required_trust_signals": [
+      "reviews",
+      "ratings",
+      "guarantees",
+      "recommendations",
+      "comparisons",
+      "return_policy",
+      "other"
+    ]
+  },
+  "signal_flags": [
+    "habit_signal",
+    "experimentation_signal",
+    "urgency_context",
+    "convenience_signal"
+  ],
+  "analysis_questions": [
+    { "id": "Q1", "text": "Why do users repeatedly buy from the same categories?" },
+    { "id": "Q2", "text": "What prevents users from exploring new categories?" },
+    { "id": "Q3", "text": "How do users discover products today?" },
+    { "id": "Q4", "text": "What role do habits, trust, urgency, and convenience play?" },
+    { "id": "Q5", "text": "What information do users need before trying a new category?" },
+    { "id": "Q6", "text": "What frustrations appear consistently across feedback?" },
+    { "id": "Q7", "text": "Which user segments are more open to experimentation?" },
+    { "id": "Q8", "text": "What triggers exploration into a new category?" },
+    { "id": "Q9", "text": "How much is behavior driven by habit vs poor discovery?" },
+    { "id": "Q10", "text": "What role do trust, pricing, assortment, and product information play?" },
+    { "id": "Q11", "text": "Which themes repeat across feedback channels?" },
+    { "id": "Q12", "text": "Which segments, missions, or occasions lead to cross-category expansion?" }
+  ]
+}

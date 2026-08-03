@@ -1,0 +1,193 @@
+{
+  "created_at": "2026-07-30T15:48:30+00:00",
+  "north_star": "Increase monthly new-category adoption among existing Instamart shoppers without harming core replenishment trust.",
+  "metric_count": 4,
+  "guardrail_count": 4,
+  "hypotheses_with_metrics": 10,
+  "core_metrics": [
+    {
+      "metric_id": "m_new_category_add",
+      "name": "new-category add-to-order rate",
+      "definition": "Share of eligible sessions/orders that add an item from a category not purchased in the prior 30–90 days.",
+      "owner": "growth",
+      "applies_to": [
+        "trust",
+        "discovery",
+        "pricing",
+        "assortment"
+      ]
+    },
+    {
+      "metric_id": "m_new_category_trial",
+      "name": "adjacent-category trial conversion",
+      "definition": "Share of users exposed to a category-expansion intervention who purchase from the promoted adjacent category.",
+      "owner": "growth",
+      "applies_to": [
+        "pricing",
+        "discovery",
+        "assortment"
+      ]
+    },
+    {
+      "metric_id": "m_browse_depth",
+      "name": "new-category browse depth",
+      "definition": "Average number of distinct non-staple categories opened per session among exposed users.",
+      "owner": "product",
+      "applies_to": [
+        "discovery"
+      ]
+    },
+    {
+      "metric_id": "m_repeat_expansion",
+      "name": "30-day category expansion retention",
+      "definition": "Share of first-time category triers who purchase from that category again within 30 days.",
+      "owner": "growth",
+      "applies_to": [
+        "trust",
+        "pricing",
+        "assortment"
+      ]
+    }
+  ],
+  "guardrail_metrics": [
+    {
+      "metric_id": "g_order_conversion",
+      "name": "overall order conversion",
+      "definition": "Orders / sessions for exposed cohort vs control."
+    },
+    {
+      "metric_id": "g_support_contacts",
+      "name": "customer support contacts per order",
+      "definition": "Support tickets or in-app help starts per completed order."
+    },
+    {
+      "metric_id": "g_refund_cancel",
+      "name": "refund or cancellation rate",
+      "definition": "Share of orders with refund, replacement, or cancellation."
+    },
+    {
+      "metric_id": "g_nudge_dismiss",
+      "name": "expansion-prompt dismiss rate",
+      "definition": "Share of users who dismiss or ignore category-expansion prompts."
+    }
+  ],
+  "hypothesis_metric_map": [
+    {
+      "hypothesis_id": "hyp_001",
+      "linked_opportunity_id": "opp_001",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Exclude users with unresolved refund/support issues in the last 14 days when testing category-expansion prompts."
+    },
+    {
+      "hypothesis_id": "hyp_002",
+      "linked_opportunity_id": "opp_004",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Exclude users with unresolved refund/support issues in the last 14 days when testing category-expansion prompts."
+    },
+    {
+      "hypothesis_id": "hyp_003",
+      "linked_opportunity_id": "opp_006",
+      "primary_metric": "trial conversion for promoted adjacent-category items",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Define mission and segment eligibility from Phase 4 opportunity fields."
+    },
+    {
+      "hypothesis_id": "hyp_004",
+      "linked_opportunity_id": "opp_008",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Define mission and segment eligibility from Phase 4 opportunity fields."
+    },
+    {
+      "hypothesis_id": "hyp_005",
+      "linked_opportunity_id": "opp_010",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Exclude users with unresolved refund/support issues in the last 14 days when testing category-expansion prompts."
+    },
+    {
+      "hypothesis_id": "hyp_006",
+      "linked_opportunity_id": "opp_003",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Exclude users with unresolved refund/support issues in the last 14 days when testing category-expansion prompts."
+    },
+    {
+      "hypothesis_id": "hyp_007",
+      "linked_opportunity_id": "opp_005",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Define mission and segment eligibility from Phase 4 opportunity fields."
+    },
+    {
+      "hypothesis_id": "hyp_008",
+      "linked_opportunity_id": "opp_007",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Exclude users with unresolved refund/support issues in the last 14 days when testing category-expansion prompts."
+    },
+    {
+      "hypothesis_id": "hyp_009",
+      "linked_opportunity_id": "opp_002",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Define mission and segment eligibility from Phase 4 opportunity fields."
+    },
+    {
+      "hypothesis_id": "hyp_010",
+      "linked_opportunity_id": "opp_009",
+      "primary_metric": "trial conversion for promoted adjacent-category items",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "eligibility_suggestion": "Define mission and segment eligibility from Phase 4 opportunity fields."
+    }
+  ],
+  "opportunity_count_represented": 10,
+  "measurement_notes": [
+    "Do not claim causality from observational feedback alone.",
+    "Prefer holdout or A/B tests for all priority hypotheses.",
+    "Segment results by family_household and habitual_replenisher first.",
+    "Report Play Store complaint bias as a research caveat in every pilot readout."
+  ]
+}

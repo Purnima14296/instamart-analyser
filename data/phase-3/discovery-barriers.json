@@ -1,0 +1,400 @@
+{
+  "created_at": "2026-07-28T19:42:58+00:00",
+  "play_store_bias_note": "Current enriched sample is complaint-heavy and dominated by Play Store reviews.",
+  "items": [
+    {
+      "theme": "trust_quality__replenishment__grocery",
+      "category_exploration_barrier": [
+        "lack_of_trust",
+        "unavailable_products",
+        "price_uncertainty",
+        "other"
+      ],
+      "supporting_review_count": 25,
+      "affected_segment": "family_household",
+      "confidence": "high",
+      "evidence_examples": [
+        {
+          "record_id": "033815f2-86e3-4928-b57b-c30bc5ac361a",
+          "source": "play_store",
+          "snippet": "Never shop on Swigg or Instamart. These apps only take money from you and make you wait for 5 to 7 days in the name of refund and their executives also do not good"
+        },
+        {
+          "record_id": "03c5f585-e23e-4c3f-89c4-a94e821d05ec",
+          "source": "play_store",
+          "snippet": "I placed an order on the Baje app, but I cancelled it because of an address issue. You still have not given my refund back. Customer service is also not responding. The refund is still not showing in my account from Baj..."
+        },
+        {
+          "record_id": "044cf26f-3376-4ff3-8f91-9db2fe4fea91",
+          "source": "play_store",
+          "snippet": "Typical Third world app. Not reliable. Instamart sends expired goods, delivery partners are always late, orders are misplaced."
+        }
+      ],
+      "product_opportunity": "Use clearer pricing, entry offers, and low-risk bundles to reduce trial friction."
+    },
+    {
+      "theme": "trust_quality__replenishment__other",
+      "category_exploration_barrier": [
+        "lack_of_trust",
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 8,
+      "affected_segment": "family_household",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "002e884c-e154-4b58-9bfd-0de30c1b851c",
+          "source": "play_store",
+          "snippet": "uninstalling the app.. instamart version is very poor. They didn't give refund on time.. also give poor items. didn't reply neatly. very bad experience."
+        },
+        {
+          "record_id": "04bb8348-5b5f-48e7-add8-f1103ddb62b8",
+          "source": "play_store",
+          "snippet": "I wish I was able to give zero rating to this app after facing SWIGGY INSTAMART service delivery partner refusing to deliver product at doorstep as advertised by company policy and half empty hair oil bottles and no sol..."
+        },
+        {
+          "record_id": "0eda57fa-c576-484d-be1f-7b2613b64a6b",
+          "source": "play_store",
+          "snippet": "My recent experience with Swiggy instamart has been extremely disappointing. They charge extra money without consulting me. When I asked for the refund they didn't even resolve the issue, nor response my mail."
+        }
+      ],
+      "product_opportunity": "Use clearer pricing, entry offers, and low-risk bundles to reduce trial friction."
+    },
+    {
+      "theme": "delivery_fee_threshold__replenishment__grocery",
+      "category_exploration_barrier": [
+        "habit_lock_in",
+        "price_uncertainty",
+        "other"
+      ],
+      "supporting_review_count": 7,
+      "affected_segment": "habitual_replenisher",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "02082c2d-2da5-4ec3-bc02-5f32a196fc43",
+          "source": "play_store",
+          "snippet": "the app works good except zepto delivers in half the time of instamart deliveries. and some of the delivery agents on swiggy do not know how to read english or even other languages- and hence mess up the orders. so I wo..."
+        },
+        {
+          "record_id": "06ebf68f-7ec0-408d-aec3-880b0f74f0ec",
+          "source": "play_store",
+          "snippet": "wich I could give zero star to instamart from last few order it takes more than 1 hr to deliver in other apps like blinkit or zepto take one 5 to 7 min max"
+        },
+        {
+          "record_id": "1d19549f-1715-4b5f-a0d6-c9b3cef6912f",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart is the biggest quick commerce scam! It will first show you 10 minutes, then for another 5 minutes no delivery partner will assign. Then after 10 minutes the delivery partner is assigned with near by del..."
+        }
+      ],
+      "product_opportunity": "Create habit-breaking nudges such as adjacent-category prompts on reorder journeys."
+    },
+    {
+      "theme": "poor_discovery__replenishment__grocery",
+      "category_exploration_barrier": [
+        "poor_discovery"
+      ],
+      "supporting_review_count": 6,
+      "affected_segment": "family_household",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "040c4820-d276-4cfa-8a95-97dd7e0ae8d1",
+          "source": "youtube",
+          "snippet": "YouTube review comment: Compared Instamart, Blinkit and Zepto — Instamart has the best delivery but worst category browsing. I still only buy groceries there."
+        },
+        {
+          "record_id": "1b1dacb2-c212-4e27-b2da-f1f31a7af2f1",
+          "source": "play_store",
+          "snippet": "I ordered some vegetables and hair oil in swing instamart , hair oil missing in the order,no one is not responding it, vegetables also not good, I raise the quality issue, refund the money, but amount not credit in my a..."
+        },
+        {
+          "record_id": "1dcfab29-311e-494a-82f4-13057a980152",
+          "source": "play_store",
+          "snippet": "now a days very pure quality items are coming in instamart espaecially vegetables and fruits. purposefully made the point no replacement. so very few amount only refunded."
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "habit_lock_in__replenishment__grocery",
+      "category_exploration_barrier": [
+        "habit_lock_in",
+        "poor_discovery",
+        "lack_of_trust",
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 5,
+      "affected_segment": "family_household",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "086df1c8-f757-47f9-8b08-8d0c1d103f63",
+          "source": "play_store",
+          "snippet": "I am regularly buy goods from Instamart but they are not introduced me any offer such a bad app"
+        },
+        {
+          "record_id": "1dcd43f1-59e5-455a-94cd-a34d6b0b3020",
+          "source": "play_store",
+          "snippet": "worst app and bad service, go better app to Instamart jio mart"
+        },
+        {
+          "record_id": "22b5d4ca-f3d5-4888-aea3-0cce86bf4315",
+          "source": "play_store",
+          "snippet": "Update 2026: Uninstalling and never using this app. So many reasons. Onboarding bad unhygienic restaurants. too much delay, shortage of delivery agents, extremely bad support with useless AI bot, no option to speak with..."
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "past_bad_experience__replenishment__household_essentials",
+      "category_exploration_barrier": [
+        "lack_of_trust",
+        "poor_discovery"
+      ],
+      "supporting_review_count": 5,
+      "affected_segment": "habitual_replenisher",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "11aa4fa7-c548-4bb4-a04c-0aeab24ee34f",
+          "source": "play_store",
+          "snippet": "Very poor experience with Swiggy Instamart. I received a defective product and even after sharing video proof, there is no proper response from support. It’s been days and still no resolution. This kind of delay is unac..."
+        },
+        {
+          "record_id": "123031ec-6c22-4885-bcd5-8800ce397018",
+          "source": "play_store",
+          "snippet": "very bad experience with customer service, they sent the wrong item to Instamart and it took ages to explain to them the same. The refund is also given as Swiggy money not getting my money in my bank account. lately the..."
+        },
+        {
+          "record_id": "15afbbb1-45a9-4d01-8f04-8b9c165db689",
+          "source": "play_store",
+          "snippet": "swiggy has become very disappointing lately , the food is bad, no proper delivery partners and the orders are always delayed . I waited 2 hours for my food and even when it arrived , i recieved the wrong order. i talked..."
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "poor_discovery__browse_discover__other",
+      "category_exploration_barrier": [
+        "poor_discovery"
+      ],
+      "supporting_review_count": 5,
+      "affected_segment": "explorer",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "062cb2b8-3e75-4222-8e34-d0552c6c8eeb",
+          "source": "play_store",
+          "snippet": "how to find insta mart how your developrs are making UI.... its difficult....."
+        },
+        {
+          "record_id": "19d43730-4c87-4cfc-80de-dddf582ba6c3",
+          "source": "play_store",
+          "snippet": "Instamart is soo buggy with print service, when I add prints and groceries together and minimize app, complete cart got empty even cart option got missing in UI.... mentioned as 1stprint service is free but it's not app..."
+        },
+        {
+          "record_id": "1c927cec-6733-485f-aa56-bddc181cf446",
+          "source": "play_store",
+          "snippet": "i can't find instamart in swiggy app"
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "poor_discovery__replenishment__household_essentials",
+      "category_exploration_barrier": [
+        "poor_discovery"
+      ],
+      "supporting_review_count": 5,
+      "affected_segment": "habitual_replenisher",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "3549b385-c91d-48f9-a96d-fa58e83b0d86",
+          "source": "play_store",
+          "snippet": "Fortunately I never have had to deal with the Swiggy Customer Service as I have always received all my orders within time but I still use COD to be safe most of the time. The reason for my 1 star is the pathetic App whi..."
+        },
+        {
+          "record_id": "39c5e41d-fc78-4c64-8385-82de04573eb0",
+          "source": "play_store",
+          "snippet": "I’ve been a loyal customer, but your service has become a harassing experience. Recently, delivery times have slowed down, I often receive wrong products, and sometimes items get canceled right after ordering! The final..."
+        },
+        {
+          "record_id": "42cd9c45-512b-4beb-80ab-8739d700b66d",
+          "source": "play_store",
+          "snippet": "Bug within the application doesn't let users proceed with the payment on Instamart."
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "price_sensitivity__replenishment__grocery",
+      "category_exploration_barrier": [
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 5,
+      "affected_segment": "deal_seeker",
+      "confidence": "medium",
+      "evidence_examples": [
+        {
+          "record_id": "229add06-a04c-4996-b5fa-8e111c46ff5d",
+          "source": "play_store",
+          "snippet": "instamart :- They say free delivery, while adding items they secretely add high surge fee. it costs u 40rps extra... avoid this worst delivery app."
+        },
+        {
+          "record_id": "239a162f-366d-4224-9555-44b894817176",
+          "source": "play_store",
+          "snippet": "Its worst for grocery app instamart it's taking 115₹ delivery charges for 1st order also other app are better for grocery like blinkit and jiomart..... Never to try it again and now ordered cake on mother's day the deli..."
+        },
+        {
+          "record_id": "2f198bf9-e92d-4615-b173-c01c5ee85073",
+          "source": "play_store",
+          "snippet": "I recently noticed that a surcharge fee was added to my order after placing it on Swiggy Instamart. When choosing Cash on Delivery, it’s very easy to miss this extra charge during checkout. Maybe I should have checked m..."
+        }
+      ],
+      "product_opportunity": "Use clearer pricing, entry offers, and low-risk bundles to reduce trial friction."
+    },
+    {
+      "theme": "habit_lock_in__replenishment__other",
+      "category_exploration_barrier": [
+        "habit_lock_in",
+        "poor_discovery",
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 4,
+      "affected_segment": "habitual_replenisher",
+      "confidence": "low",
+      "evidence_examples": [
+        {
+          "record_id": "0d6d0e4e-2faf-4e54-8c32-b43ef4d28413",
+          "source": "play_store",
+          "snippet": "The app is becoming worse and worse. More frequent failed payments, more ads and weird bugs. The worst of all - immediately after ordering we are now welcomed with ads rather than the tracking map. They even default to..."
+        },
+        {
+          "record_id": "1078f4bc-d9c1-4b24-8a52-f20910cbe701",
+          "source": "play_store",
+          "snippet": "don't update the app you can not search without login in swiggy instamart and they blocked number number also just email the swiggy they said we can't do anything then why are you giving email id in play store feedback"
+        },
+        {
+          "record_id": "25fec48b-93c8-44fe-ae9f-3422e897a276",
+          "source": "play_store",
+          "snippet": "Worst customer support, have no authority nor have any suitable solutions, Takes ages to reach the correct team. Only good for Instamart which is in their control, and expensive than zepto, blinkit, beneficial only when..."
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "poor_discovery__urgent_need__household_essentials",
+      "category_exploration_barrier": [
+        "poor_discovery",
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 4,
+      "affected_segment": "single_professional",
+      "confidence": "low",
+      "evidence_examples": [
+        {
+          "record_id": "3d526e1f-eac6-4ad1-9b7a-7d231c6adc4c",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart was really disappointing. I ordered a soundbar that was shown as available and waited nearly 45 minutes. First, I received a call saying the order was delayed, and then it was suddenly cancelled without..."
+        },
+        {
+          "record_id": "3dbef3bb-594b-46fd-b49b-cb7aa98be615",
+          "source": "play_store",
+          "snippet": "I had ordered a set of pens on their instamart portal. The order had an ETA of 20 minutes. The order was never received while i waited for an hour and a half, and when i contacted the concerned person, he refused to del..."
+        },
+        {
+          "record_id": "3f99dd22-671d-4e46-989f-296b3862aab4",
+          "source": "play_store",
+          "snippet": "order ice cream on Instamart all of them were melted when I refused to accept the order delivery guy misbehaved no customer service pathetic app"
+        }
+      ],
+      "product_opportunity": "Improve homepage/category discovery, search relevance, and cross-category recommendations."
+    },
+    {
+      "theme": "trust_quality__replenishment__household_essentials",
+      "category_exploration_barrier": [
+        "lack_of_trust",
+        "lack_of_information"
+      ],
+      "supporting_review_count": 4,
+      "affected_segment": "family_household",
+      "confidence": "low",
+      "evidence_examples": [
+        {
+          "record_id": "034ff1a1-f00e-482f-937c-069cfc967120",
+          "source": "play_store",
+          "snippet": "I received a faulty pop up toaster. inspite of writing mails I have got no response yet. does this mean that never to buy any appliance from Instamart I have already mail to Swiggy support. but no response yet I haven't..."
+        },
+        {
+          "record_id": "1569ac70-7de4-4649-a4b3-8dabad755375",
+          "source": "play_store",
+          "snippet": "Disappointing experience with Swiggy Instamart. Received 2 sealed water bottles (10ltr), but one was nearly 30% less filled than the other. I reported it from my registered email and attached photos, video proof, and in..."
+        },
+        {
+          "record_id": "1fc000f3-2743-4fb7-80b1-f72ea16afd58",
+          "source": "play_store",
+          "snippet": "Doesn't even deserve 1 star. Horrible experience. I received an Instamart order in dirty packaging containing dead cockroaches. After returning it, I was not given a full refund. Instead, I was asked to send a separate..."
+        }
+      ],
+      "product_opportunity": "Add richer PDP information, reviews, comparisons, and trust cues before trial."
+    },
+    {
+      "theme": "assortment_gap__replenishment__grocery",
+      "category_exploration_barrier": [
+        "unavailable_products",
+        "price_uncertainty",
+        "lack_of_information"
+      ],
+      "supporting_review_count": 3,
+      "affected_segment": "family_household",
+      "confidence": "low",
+      "evidence_examples": [
+        {
+          "record_id": "068ab77c-ff9e-40fa-b48f-ff3a41f2067e",
+          "source": "play_store",
+          "snippet": "worst App.. missing products on Instamart. charges platform fee.. product cost is more hopeless application and interface"
+        },
+        {
+          "record_id": "182248fa-f36a-4c94-a3f7-849e27a2045e",
+          "source": "play_store",
+          "snippet": "worst app Swiggy and Instamart also i ordered walnut nd Tomato and three other items but i received it low quantity and worst product i have pay 404 and received it worst product it's totally waste of money. filpkart an..."
+        },
+        {
+          "record_id": "2475eae1-126c-48ab-aa1b-6b8b476e9f16",
+          "source": "play_store",
+          "snippet": "Instamart services have gone downhill. most of the time store is unserviceable, or items are unavailable. If such a breath of items is not manageable then just keep the basics but do a good job with that... people will..."
+        }
+      ],
+      "product_opportunity": "Add richer PDP information, reviews, comparisons, and trust cues before trial."
+    },
+    {
+      "theme": "price_sensitivity__replenishment__other",
+      "category_exploration_barrier": [
+        "price_uncertainty"
+      ],
+      "supporting_review_count": 3,
+      "affected_segment": "deal_seeker",
+      "confidence": "low",
+      "evidence_examples": [
+        {
+          "record_id": "0052d703-a5cf-41a6-b0bf-37e0d7b5a397",
+          "source": "play_store",
+          "snippet": "fraud app always charging serge fees and I see many instamart guy are standing at the store waiting for order and they applied surge fees"
+        },
+        {
+          "record_id": "0533c406-ac98-47e7-854b-5f594b723fee",
+          "source": "play_store",
+          "snippet": "I have ordered from Instamart by mistake i have selected one wrong item for that they have taken a 100% cancelled fee amount of 236. Hence I was a regular Swiggy customer. They are giving false promises to customers tha..."
+        },
+        {
+          "record_id": "0ebdc57c-54cd-464b-9651-608da0f019e3",
+          "source": "play_store",
+          "snippet": "I placed an order on Swiggy Instamart and canceled it within a minute because I didnt need the item but they're not giving 100% refund. then why is there a cancel order option. i wouldve at least kept the item that i pa..."
+        }
+      ],
+      "product_opportunity": "Use clearer pricing, entry offers, and low-risk bundles to reduce trial friction."
+    }
+  ]
+}

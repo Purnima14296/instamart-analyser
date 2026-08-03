@@ -1,0 +1,852 @@
+{
+  "created_at": "2026-07-29T07:47:20+00:00",
+  "input_summary": {
+    "created_at": "2026-07-29T07:47:20+00:00",
+    "phase_3_created_at": "2026-07-28T19:43:07+00:00",
+    "input_insight_count": 10,
+    "input_cluster_count": 19,
+    "enriched_record_count": 164,
+    "opportunity_count": 10,
+    "hypothesis_count": 10,
+    "opportunity_type_breakdown": {
+      "trust": 5,
+      "pricing": 6,
+      "assortment": 1,
+      "discovery": 3,
+      "service": 2
+    },
+    "priority_band_breakdown": {
+      "high": 5,
+      "medium": 3,
+      "low": 2
+    },
+    "top_segments": [
+      [
+        "family_household",
+        61
+      ],
+      [
+        "habitual_replenisher",
+        39
+      ],
+      [
+        "deal_seeker",
+        18
+      ],
+      [
+        "new_user",
+        17
+      ],
+      [
+        "explorer",
+        15
+      ]
+    ],
+    "bias_notes": [
+      "Current enriched sample is complaint-heavy and dominated by Play Store reviews.",
+      "Discovery-specific themes should be interpreted alongside this source bias."
+    ]
+  },
+  "opportunities": [
+    {
+      "opportunity_id": "opp_001",
+      "title": "Rebuild trust before cross-sell",
+      "linked_insight_ids": [
+        "insight_d925042f"
+      ],
+      "linked_theme_ids": [
+        "trust_quality__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "trust",
+        "pricing",
+        "assortment"
+      ],
+      "intervention_area": "trust",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "opportunity_statement": "Improve quality, refund, and service confidence before pushing category expansion.",
+      "recommended_moves": [
+        "Surface freshness or replacement guarantees near adjacent-category modules.",
+        "Show delivery reliability and issue-resolution reassurance before trial prompts.",
+        "Target category expansion prompts only after a clean recent order history."
+      ],
+      "expected_business_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "search",
+        "previous_orders",
+        "other"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 25,
+      "source_breakdown": {
+        "play_store": 24,
+        "mouthshut": 1
+      },
+      "confidence": "high",
+      "priority": {
+        "score": 15,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 3,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 3
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "033815f2-86e3-4928-b57b-c30bc5ac361a",
+          "source": "play_store",
+          "snippet": "Never shop on Swigg or Instamart. These apps only take money from you and make you wait for 5 to 7 days in the name of refund and their executives also do not good"
+        },
+        {
+          "record_id": "03c5f585-e23e-4c3f-89c4-a94e821d05ec",
+          "source": "play_store",
+          "snippet": "I placed an order on the Baje app, but I cancelled it because of an address issue. You still have not given my refund back. Customer service is also not responding. The refund is still not showing in my account from Baj..."
+        },
+        {
+          "record_id": "044cf26f-3376-4ff3-8f91-9db2fe4fea91",
+          "source": "play_store",
+          "snippet": "Typical Third world app. Not reliable. Instamart sends expired goods, delivery partners are always late, orders are misplaced."
+        }
+      ],
+      "derived_from_bucket": "discovery_barriers",
+      "rank": 1
+    },
+    {
+      "opportunity_id": "opp_004",
+      "title": "Rebuild trust before cross-sell",
+      "linked_insight_ids": [
+        "insight_165705d9"
+      ],
+      "linked_theme_ids": [
+        "trust_quality__replenishment__other"
+      ],
+      "opportunity_types": [
+        "trust",
+        "pricing"
+      ],
+      "intervention_area": "trust",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "opportunity_statement": "Improve quality, refund, and service confidence before pushing category expansion.",
+      "recommended_moves": [
+        "Surface freshness or replacement guarantees near adjacent-category modules.",
+        "Show delivery reliability and issue-resolution reassurance before trial prompts.",
+        "Target category expansion prompts only after a clean recent order history."
+      ],
+      "expected_business_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "other",
+      "top_discovery_triggers": [
+        "search"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 8,
+      "source_breakdown": {
+        "play_store": 8
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "002e884c-e154-4b58-9bfd-0de30c1b851c",
+          "source": "play_store",
+          "snippet": "uninstalling the app.. instamart version is very poor. They didn't give refund on time.. also give poor items. didn't reply neatly. very bad experience."
+        },
+        {
+          "record_id": "04bb8348-5b5f-48e7-add8-f1103ddb62b8",
+          "source": "play_store",
+          "snippet": "I wish I was able to give zero rating to this app after facing SWIGGY INSTAMART service delivery partner refusing to deliver product at doorstep as advertised by company policy and half empty hair oil bottles and no sol..."
+        },
+        {
+          "record_id": "0eda57fa-c576-484d-be1f-7b2613b64a6b",
+          "source": "play_store",
+          "snippet": "My recent experience with Swiggy instamart has been extremely disappointing. They charge extra money without consulting me. When I asked for the refund they didn't even resolve the issue, nor response my mail."
+        }
+      ],
+      "derived_from_bucket": "discovery_barriers",
+      "rank": 2
+    },
+    {
+      "opportunity_id": "opp_006",
+      "title": "Lower the first-try price risk",
+      "linked_insight_ids": [
+        "insight_4faef10a"
+      ],
+      "linked_theme_ids": [
+        "delivery_fee_threshold__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "discovery",
+        "pricing"
+      ],
+      "intervention_area": "pricing",
+      "user_problem": "Habitual Replenisher users hesitate to add new-category items because total cost feels uncertain or not worth the risk.",
+      "opportunity_statement": "Reduce trial friction with clearer value communication and low-risk entry offers.",
+      "recommended_moves": [
+        "Bundle adjacent-category trials with staple reorder journeys.",
+        "Use entry-price callouts and fee transparency before checkout.",
+        "Test limited-scope offers on categories with high hesitation and medium interest."
+      ],
+      "expected_business_effect": "Lower perceived risk should improve trial conversion in categories users already consider but do not purchase.",
+      "affected_segment": "habitual_replenisher",
+      "segment_size_estimate": {
+        "segment": "habitual_replenisher",
+        "review_count": 39,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "search",
+        "previous_orders"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 7,
+      "source_breakdown": {
+        "play_store": 7
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Users already have some intent but stop because economics are unclear.",
+        "Targeted offers will drive exploration without fully training users to wait for discounts.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "02082c2d-2da5-4ec3-bc02-5f32a196fc43",
+          "source": "play_store",
+          "snippet": "the app works good except zepto delivers in half the time of instamart deliveries. and some of the delivery agents on swiggy do not know how to read english or even other languages- and hence mess up the orders. so I wo..."
+        },
+        {
+          "record_id": "06ebf68f-7ec0-408d-aec3-880b0f74f0ec",
+          "source": "play_store",
+          "snippet": "wich I could give zero star to instamart from last few order it takes more than 1 hr to deliver in other apps like blinkit or zepto take one 5 to 7 min max"
+        },
+        {
+          "record_id": "1d19549f-1715-4b5f-a0d6-c9b3cef6912f",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart is the biggest quick commerce scam! It will first show you 10 minutes, then for another 5 minutes no delivery partner will assign. Then after 10 minutes the delivery partner is assigned with near by del..."
+        }
+      ],
+      "derived_from_bucket": "discovery_barriers",
+      "rank": 3
+    },
+    {
+      "opportunity_id": "opp_008",
+      "title": "Make adjacent categories easier to notice",
+      "linked_insight_ids": [
+        "insight_b0de365d"
+      ],
+      "linked_theme_ids": [
+        "poor_discovery__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "discovery"
+      ],
+      "intervention_area": "discovery",
+      "user_problem": "Family Household users stay in narrow replenishment missions because the app does not make new categories easy to find.",
+      "opportunity_statement": "Improve search, category browsing, and recommendation surfaces to reveal grocery and nearby categories.",
+      "recommended_moves": [
+        "Add adjacent-category prompts during reorder and search journeys.",
+        "Improve homepage and category landing-page navigation for common missions.",
+        "Use contextual recommendations tied to basket contents instead of generic banners."
+      ],
+      "expected_business_effect": "Better discovery should increase browse depth and new-category consideration without needing deep discounts.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "search"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 6,
+      "source_breakdown": {
+        "youtube": 1,
+        "play_store": 5
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Users are willing to explore if relevant options are made visible at the right moment.",
+        "Discovery friction is a bigger constraint than supply for these themes.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "040c4820-d276-4cfa-8a95-97dd7e0ae8d1",
+          "source": "youtube",
+          "snippet": "YouTube review comment: Compared Instamart, Blinkit and Zepto — Instamart has the best delivery but worst category browsing. I still only buy groceries there."
+        },
+        {
+          "record_id": "1b1dacb2-c212-4e27-b2da-f1f31a7af2f1",
+          "source": "play_store",
+          "snippet": "I ordered some vegetables and hair oil in swing instamart , hair oil missing in the order,no one is not responding it, vegetables also not good, I raise the quality issue, refund the money, but amount not credit in my a..."
+        },
+        {
+          "record_id": "1dcfab29-311e-494a-82f4-13057a980152",
+          "source": "play_store",
+          "snippet": "now a days very pure quality items are coming in instamart espaecially vegetables and fruits. purposefully made the point no replacement. so very few amount only refunded."
+        }
+      ],
+      "derived_from_bucket": "discovery_barriers",
+      "rank": 4
+    },
+    {
+      "opportunity_id": "opp_010",
+      "title": "Rebuild trust before cross-sell",
+      "linked_insight_ids": [
+        "insight_1dbe90c6"
+      ],
+      "linked_theme_ids": [
+        "habit_lock_in__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "discovery",
+        "trust",
+        "pricing"
+      ],
+      "intervention_area": "trust",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "opportunity_statement": "Improve quality, refund, and service confidence before pushing category expansion.",
+      "recommended_moves": [
+        "Surface freshness or replacement guarantees near adjacent-category modules.",
+        "Show delivery reliability and issue-resolution reassurance before trial prompts.",
+        "Target category expansion prompts only after a clean recent order history."
+      ],
+      "expected_business_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "previous_orders",
+        "homepage_category_browsing",
+        "search"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 5,
+      "source_breakdown": {
+        "play_store": 5
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "086df1c8-f757-47f9-8b08-8d0c1d103f63",
+          "source": "play_store",
+          "snippet": "I am regularly buy goods from Instamart but they are not introduced me any offer such a bad app"
+        },
+        {
+          "record_id": "1dcd43f1-59e5-455a-94cd-a34d6b0b3020",
+          "source": "play_store",
+          "snippet": "worst app and bad service, go better app to Instamart jio mart"
+        },
+        {
+          "record_id": "22b5d4ca-f3d5-4888-aea3-0cce86bf4315",
+          "source": "play_store",
+          "snippet": "Update 2026: Uninstalling and never using this app. So many reasons. Onboarding bad unhygienic restaurants. too much delay, shortage of delivery agents, extremely bad support with useless AI bot, no option to speak with..."
+        }
+      ],
+      "derived_from_bucket": "discovery_barriers",
+      "rank": 5
+    },
+    {
+      "opportunity_id": "opp_003",
+      "title": "Rebuild trust before cross-sell",
+      "linked_insight_ids": [
+        "insight_017b84d3"
+      ],
+      "linked_theme_ids": [
+        "past_bad_experience__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "trust",
+        "pricing"
+      ],
+      "intervention_area": "trust",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "opportunity_statement": "Improve quality, refund, and service confidence before pushing category expansion.",
+      "recommended_moves": [
+        "Surface freshness or replacement guarantees near adjacent-category modules.",
+        "Show delivery reliability and issue-resolution reassurance before trial prompts.",
+        "Target category expansion prompts only after a clean recent order history."
+      ],
+      "expected_business_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "previous_orders",
+        "search"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 11,
+      "source_breakdown": {
+        "play_store": 11
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 12,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 3,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "013268dc-3933-4496-b005-5bafe1331df8",
+          "source": "play_store",
+          "snippet": "Using swiggy from many years but still i would say never seen such third class service no matter if u ordering food or grocery you will be disappointed First of all they always fail to deliver on time app will show you..."
+        },
+        {
+          "record_id": "06f7e4c6-e695-4726-8a1a-52055bf25c79",
+          "source": "play_store",
+          "snippet": "Swiggy Instamart customer care is non respondent, I have received wrong items and the customer care told me to email the support, it's been one month and no one from Swiggy has responded back. Better to order from other..."
+        },
+        {
+          "record_id": "09892675-f511-49a8-a026-98d58d8be9e9",
+          "source": "play_store",
+          "snippet": "I am beyond disappointed with Swiggy's Instamart—this is absolutely the worst experience I have ever had with a delivery app. I ordered an item, but due to unforeseen circumstances, I had to cancel it. Shockingly, they..."
+        }
+      ],
+      "derived_from_bucket": "operational_pain_points",
+      "rank": 6
+    },
+    {
+      "opportunity_id": "opp_005",
+      "title": "Investigate and frame a targeted intervention",
+      "linked_insight_ids": [
+        "insight_2f21839c"
+      ],
+      "linked_theme_ids": [
+        "other__replenishment__grocery"
+      ],
+      "opportunity_types": [
+        "service"
+      ],
+      "intervention_area": "service",
+      "user_problem": "Family Household users show a repeat pattern in replenishment journeys, but the root cause is not specific enough for a single intervention yet.",
+      "opportunity_statement": "Treat this as a secondary opportunity area pending more evidence or manual review.",
+      "recommended_moves": [
+        "Review the underlying evidence manually and refine the barrier definition.",
+        "Pair this theme with a clearer adjacent-category or mission signal before experimentation."
+      ],
+      "expected_business_effect": "Clarifying the theme can prevent low-signal experiments and sharpen the backlog.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "previous_orders",
+        "search",
+        "homepage_category_browsing"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 7,
+      "source_breakdown": {
+        "play_store": 7
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 11,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Current evidence is directionally useful but not precise enough for a strong product bet.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "002c5ea4-70ae-4c95-81f4-c224b66802c8",
+          "source": "play_store",
+          "snippet": "Best Especially Instamart price are really very low compared to other apps like zepto and minutes.. i always ordered big list only on Swiggy insta mart it saves my money really well thanks you Swiggy keep it up."
+        },
+        {
+          "record_id": "0d54f928-73e2-44fc-a61e-2357c448ffe3",
+          "source": "play_store",
+          "snippet": "I'm very happy to this kind of service thanks Instamart"
+        },
+        {
+          "record_id": "15d09116-03cb-4386-9343-e85a6e6b8196",
+          "source": "play_store",
+          "snippet": "After my last complaint about instamart amul milk which got spoiled recently ordered milk it was good. swiggy has taken action about it. but not given me compensation about spoiled milk only asked me batch number and or..."
+        }
+      ],
+      "derived_from_bucket": "operational_pain_points",
+      "rank": 7
+    },
+    {
+      "opportunity_id": "opp_007",
+      "title": "Rebuild trust before cross-sell",
+      "linked_insight_ids": [
+        "insight_eb266bbb"
+      ],
+      "linked_theme_ids": [
+        "past_bad_experience__replenishment__other"
+      ],
+      "opportunity_types": [
+        "trust"
+      ],
+      "intervention_area": "trust",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "opportunity_statement": "Improve quality, refund, and service confidence before pushing category expansion.",
+      "recommended_moves": [
+        "Surface freshness or replacement guarantees near adjacent-category modules.",
+        "Show delivery reliability and issue-resolution reassurance before trial prompts.",
+        "Target category expansion prompts only after a clean recent order history."
+      ],
+      "expected_business_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "replenishment",
+      "primary_category": "other",
+      "top_discovery_triggers": [
+        "previous_orders",
+        "search"
+      ],
+      "required_trust_signals": [
+        "reviews",
+        "ratings",
+        "guarantees"
+      ],
+      "supporting_record_count": 6,
+      "source_breakdown": {
+        "play_store": 6
+      },
+      "confidence": "medium",
+      "priority": {
+        "score": 11,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "019ddbb8-988d-47b7-8d7b-9e63ce05f583",
+          "source": "play_store",
+          "snippet": "Very disappointing experience with Instamart. The app showed an estimated delivery time of around 15 minutes, but even after waiting for almost 1 hour the order was still not delivered. Customer support kept extending t..."
+        },
+        {
+          "record_id": "096ca6d6-f6de-40b5-9101-86f9f3974300",
+          "source": "play_store",
+          "snippet": "Ordered milk on Insta Mart - delivered curdled. Got a coupon after multiple follow-ups, but it doesn't work. Price stays the same, UPI payment gets stuck, then coupon vanishes before 30-day expiry."
+        },
+        {
+          "record_id": "0e5a8f74-0859-4219-acc9-26348c3d4819",
+          "source": "play_store",
+          "snippet": "i got a defective product from swiggy instamart when i reach out to customer support from the app they are saying reachout to us via mail and in the mail there is no response from the instamart team instamrt is trying t..."
+        }
+      ],
+      "derived_from_bucket": "operational_pain_points",
+      "rank": 8
+    },
+    {
+      "opportunity_id": "opp_002",
+      "title": "Investigate and frame a targeted intervention",
+      "linked_insight_ids": [
+        "insight_b92d1ed9"
+      ],
+      "linked_theme_ids": [
+        "other__browse_discover__grocery"
+      ],
+      "opportunity_types": [
+        "service"
+      ],
+      "intervention_area": "service",
+      "user_problem": "Explorer users show a repeat pattern in browse discover journeys, but the root cause is not specific enough for a single intervention yet.",
+      "opportunity_statement": "Treat this as a secondary opportunity area pending more evidence or manual review.",
+      "recommended_moves": [
+        "Review the underlying evidence manually and refine the barrier definition.",
+        "Pair this theme with a clearer adjacent-category or mission signal before experimentation."
+      ],
+      "expected_business_effect": "Clarifying the theme can prevent low-signal experiments and sharpen the backlog.",
+      "affected_segment": "explorer",
+      "segment_size_estimate": {
+        "segment": "explorer",
+        "review_count": 15,
+        "size_band": "medium"
+      },
+      "shopping_mission": "browse_discover",
+      "primary_category": "grocery",
+      "top_discovery_triggers": [
+        "homepage_category_browsing",
+        "offers"
+      ],
+      "required_trust_signals": [],
+      "supporting_record_count": 3,
+      "source_breakdown": {
+        "play_store": 3
+      },
+      "confidence": "low",
+      "priority": {
+        "score": 9,
+        "priority_band": "low",
+        "components": {
+          "evidence_strength": 1,
+          "segment_size": 2,
+          "strategic_importance": 2,
+          "actionability": 3,
+          "confidence": 1
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Current evidence is directionally useful but not precise enough for a strong product bet.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "00ecd32a-c503-437a-8bfd-3e33180ff388",
+          "source": "play_store",
+          "snippet": "Nice app for foodie lovers and also given more coupons for swiggy to instamart and vice versa."
+        },
+        {
+          "record_id": "1becca77-7c9b-44cf-bf24-340209dca07c",
+          "source": "play_store",
+          "snippet": "Thanks for fixing all issues. Can you create a way to order from instamart + food orders in a single delivery. Like let's say I want some fruits + protein milk + a restaurant order in a single delivery. I don't want it..."
+        },
+        {
+          "record_id": "345b7066-f784-46bb-9f2c-1d987bfdc450",
+          "source": "play_store",
+          "snippet": "relly good app you should defenetly get this app because it get get u food from mostly anywhere near u and has a lot of offers in the groceries option (instamart) where u can get things from toffies to literal part spea..."
+        }
+      ],
+      "derived_from_bucket": "category_expansion_opportunities",
+      "rank": 9
+    },
+    {
+      "opportunity_id": "opp_009",
+      "title": "Lower the first-try price risk",
+      "linked_insight_ids": [
+        "insight_223df075"
+      ],
+      "linked_theme_ids": [
+        "delivery_fee_threshold__urgent_need__other"
+      ],
+      "opportunity_types": [
+        "pricing"
+      ],
+      "intervention_area": "pricing",
+      "user_problem": "Family Household users hesitate to add new-category items because total cost feels uncertain or not worth the risk.",
+      "opportunity_statement": "Reduce trial friction with clearer value communication and low-risk entry offers.",
+      "recommended_moves": [
+        "Bundle adjacent-category trials with staple reorder journeys.",
+        "Use entry-price callouts and fee transparency before checkout.",
+        "Test limited-scope offers on categories with high hesitation and medium interest."
+      ],
+      "expected_business_effect": "Lower perceived risk should improve trial conversion in categories users already consider but do not purchase.",
+      "affected_segment": "family_household",
+      "segment_size_estimate": {
+        "segment": "family_household",
+        "review_count": 61,
+        "size_band": "large"
+      },
+      "shopping_mission": "urgent_need",
+      "primary_category": "other",
+      "top_discovery_triggers": [
+        "search"
+      ],
+      "required_trust_signals": [
+        "recommendations",
+        "guarantees"
+      ],
+      "supporting_record_count": 4,
+      "source_breakdown": {
+        "play_store": 4
+      },
+      "confidence": "low",
+      "priority": {
+        "score": 8,
+        "priority_band": "low",
+        "components": {
+          "evidence_strength": 1,
+          "segment_size": 3,
+          "strategic_importance": 2,
+          "actionability": 1,
+          "confidence": 1
+        }
+      },
+      "assumptions_and_unknowns": [
+        "Users already have some intent but stop because economics are unclear.",
+        "Targeted offers will drive exploration without fully training users to wait for discounts.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "evidence_examples": [
+        {
+          "record_id": "25eef73b-ca88-4f8b-9473-02b34809142e",
+          "source": "play_store",
+          "snippet": "Worst experience. High payment failures. Delivery partner is arrogant, he shouted. Takes order but, is unable to find delivery partners (tried with multiple deliveries). Customer care is of no help. Refund takes 3-7 day..."
+        },
+        {
+          "record_id": "27a9dc13-f66f-4571-82c6-07820022a867",
+          "source": "play_store",
+          "snippet": "Highly Disappointed they promise 10 minutes delivery which is delayed by 30 minutes or more when you don't have delivery partners then why you pick orders? Same on INSTAMART and SWIGGY FOOD They don't have fast service..."
+        },
+        {
+          "record_id": "44d671f2-5528-48f8-a64a-ba8820c7d013",
+          "source": "play_store",
+          "snippet": "I have ordered from Instamart and showed 20 mins ....after 20 mins it's again showed another 20 mins time saying that there are no delivery partner .......they are charging extra as high demand fee as well........if the..."
+        }
+      ],
+      "derived_from_bucket": "operational_pain_points",
+      "rank": 10
+    }
+  ]
+}

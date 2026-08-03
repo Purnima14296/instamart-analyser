@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://instamart-analyser.local/schemas/insight.schema.json",
+  "title": "Insight",
+  "description": "Evidence-backed insight or testable hypothesis from aggregated feedback analysis",
+  "type": "object",
+  "required": [
+    "insight_id",
+    "status",
+    "statement",
+    "confidence",
+    "analysis_question_ids",
+    "supporting_evidence",
+    "source_breakdown",
+    "affected_segment",
+    "business_implication",
+    "taxonomy_version",
+    "created_at"
+  ],
+  "properties": {
+    "insight_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "published", "hypothesis", "rejected"]
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Single clear sentence summarizing the finding"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "analysis_question_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^Q\\d+$"
+      },
+      "minItems": 1
+    },
+    "theme_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Aggregated theme identifiers from the pattern engine"
+    },
+    "primary_barriers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "primary_triggers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supporting_evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["record_id", "snippet"],
+        "properties": {
+          "record_id": { "type": "string" },
+          "snippet": { "type": "string", "minLength": 5 },
+          "source": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source_breakdown": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "description": "Count of supporting records per source type"
+    },
+    "total_supporting_records": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "affected_segment": {
+      "type": "string",
+      "description": "User segment hypothesis or 'general'"
+    },
+    "business_implication": {
+      "type": "string",
+      "minLength": 10
+    },
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "quality_score": {
+      "type": "object",
+      "properties": {
+        "evidence_strength": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "traceability": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "relevance": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "actionability": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "clarity": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "total": { "type": "integer", "minimum": 5, "maximum": 25 }
+      },
+      "additionalProperties": false
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "taxonomy_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": { "status": { "const": "published" } }
+      },
+      "then": {
+        "properties": {
+          "supporting_evidence": { "minItems": 3 },
+          "total_supporting_records": { "minimum": 3 }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "confidence": { "const": "high" } }
+      },
+      "then": {
+        "properties": {
+          "total_supporting_records": { "minimum": 10 }
+        }
+      }
+    }
+  ]
+}

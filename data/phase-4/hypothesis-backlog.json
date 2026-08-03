@@ -1,0 +1,462 @@
+{
+  "created_at": "2026-07-29T07:47:20+00:00",
+  "input_summary": {
+    "created_at": "2026-07-29T07:47:20+00:00",
+    "phase_3_created_at": "2026-07-28T19:43:07+00:00",
+    "input_insight_count": 10,
+    "input_cluster_count": 19,
+    "enriched_record_count": 164,
+    "opportunity_count": 10,
+    "hypothesis_count": 10,
+    "opportunity_type_breakdown": {
+      "trust": 5,
+      "pricing": 6,
+      "assortment": 1,
+      "discovery": 3,
+      "service": 2
+    },
+    "priority_band_breakdown": {
+      "high": 5,
+      "medium": 3,
+      "low": 2
+    },
+    "top_segments": [
+      [
+        "family_household",
+        61
+      ],
+      [
+        "habitual_replenisher",
+        39
+      ],
+      [
+        "deal_seeker",
+        18
+      ],
+      [
+        "new_user",
+        17
+      ],
+      [
+        "explorer",
+        15
+      ]
+    ],
+    "bias_notes": [
+      "Current enriched sample is complaint-heavy and dominated by Play Store reviews.",
+      "Discovery-specific themes should be interpreted alongside this source bias."
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "hyp_001",
+      "priority_rank": 1,
+      "linked_opportunity_id": "opp_001",
+      "hypothesis": "If Instamart uses surface guarantees and post-order reassurance in adjacent-category prompts for Family Household users during replenishment missions, then new-category add-to-order rate among eligible users should improve for grocery opportunities.",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "proposed_intervention": "Surface freshness or replacement guarantees near adjacent-category modules.",
+      "expected_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 15,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 3,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 3
+        }
+      },
+      "confidence": "high",
+      "assumptions": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_001",
+        "insight_ids": [
+          "insight_d925042f"
+        ],
+        "theme_ids": [
+          "trust_quality__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_002",
+      "priority_rank": 2,
+      "linked_opportunity_id": "opp_004",
+      "hypothesis": "If Instamart uses surface guarantees and post-order reassurance in adjacent-category prompts for Family Household users during replenishment missions, then new-category add-to-order rate among eligible users should improve for cross-category opportunities.",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "proposed_intervention": "Surface freshness or replacement guarantees near adjacent-category modules.",
+      "expected_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_004",
+        "insight_ids": [
+          "insight_165705d9"
+        ],
+        "theme_ids": [
+          "trust_quality__replenishment__other"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_003",
+      "priority_rank": 3,
+      "linked_opportunity_id": "opp_006",
+      "hypothesis": "If Instamart uses show low-risk entry offers or bundles for adjacent categories for Habitual Replenisher users during replenishment missions, then trial conversion for promoted adjacent-category items should improve for grocery opportunities.",
+      "user_problem": "Habitual Replenisher users hesitate to add new-category items because total cost feels uncertain or not worth the risk.",
+      "proposed_intervention": "Bundle adjacent-category trials with staple reorder journeys.",
+      "expected_effect": "Lower perceived risk should improve trial conversion in categories users already consider but do not purchase.",
+      "primary_metric": "trial conversion for promoted adjacent-category items",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Users already have some intent but stop because economics are unclear.",
+        "Targeted offers will drive exploration without fully training users to wait for discounts.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_006",
+        "insight_ids": [
+          "insight_4faef10a"
+        ],
+        "theme_ids": [
+          "delivery_fee_threshold__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_004",
+      "priority_rank": 4,
+      "linked_opportunity_id": "opp_008",
+      "hypothesis": "If Instamart uses improve discovery prompts and category navigation in high-intent journeys for Family Household users during replenishment missions, then share of users who open or add from a new category should improve for grocery opportunities.",
+      "user_problem": "Family Household users stay in narrow replenishment missions because the app does not make new categories easy to find.",
+      "proposed_intervention": "Add adjacent-category prompts during reorder and search journeys.",
+      "expected_effect": "Better discovery should increase browse depth and new-category consideration without needing deep discounts.",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Users are willing to explore if relevant options are made visible at the right moment.",
+        "Discovery friction is a bigger constraint than supply for these themes.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_008",
+        "insight_ids": [
+          "insight_b0de365d"
+        ],
+        "theme_ids": [
+          "poor_discovery__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_005",
+      "priority_rank": 5,
+      "linked_opportunity_id": "opp_010",
+      "hypothesis": "If Instamart uses surface guarantees and post-order reassurance in adjacent-category prompts for Family Household users during replenishment missions, then new-category add-to-order rate among eligible users should improve for grocery opportunities.",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "proposed_intervention": "Surface freshness or replacement guarantees near adjacent-category modules.",
+      "expected_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 13,
+        "priority_band": "high",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 3,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_010",
+        "insight_ids": [
+          "insight_1dbe90c6"
+        ],
+        "theme_ids": [
+          "habit_lock_in__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_006",
+      "priority_rank": 6,
+      "linked_opportunity_id": "opp_003",
+      "hypothesis": "If Instamart uses surface guarantees and post-order reassurance in adjacent-category prompts for Family Household users during replenishment missions, then new-category add-to-order rate among eligible users should improve for grocery opportunities.",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "proposed_intervention": "Surface freshness or replacement guarantees near adjacent-category modules.",
+      "expected_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 12,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 3,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_003",
+        "insight_ids": [
+          "insight_017b84d3"
+        ],
+        "theme_ids": [
+          "past_bad_experience__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_007",
+      "priority_rank": 7,
+      "linked_opportunity_id": "opp_005",
+      "hypothesis": "If Instamart uses improve discovery prompts and category navigation in high-intent journeys for Family Household users during replenishment missions, then share of users who open or add from a new category should improve for grocery opportunities.",
+      "user_problem": "Family Household users show a repeat pattern in replenishment journeys, but the root cause is not specific enough for a single intervention yet.",
+      "proposed_intervention": "Review the underlying evidence manually and refine the barrier definition.",
+      "expected_effect": "Clarifying the theme can prevent low-signal experiments and sharpen the backlog.",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 11,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Current evidence is directionally useful but not precise enough for a strong product bet.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_005",
+        "insight_ids": [
+          "insight_2f21839c"
+        ],
+        "theme_ids": [
+          "other__replenishment__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_008",
+      "priority_rank": 8,
+      "linked_opportunity_id": "opp_007",
+      "hypothesis": "If Instamart uses surface guarantees and post-order reassurance in adjacent-category prompts for Family Household users during replenishment missions, then new-category add-to-order rate among eligible users should improve for cross-category opportunities.",
+      "user_problem": "Family Household users do not want to try more categories when core grocery or delivery experiences feel unreliable.",
+      "proposed_intervention": "Surface freshness or replacement guarantees near adjacent-category modules.",
+      "expected_effect": "Higher trust should reduce drop-off from expansion prompts and increase willingness to try adjacent categories.",
+      "primary_metric": "new-category add-to-order rate among eligible users",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 11,
+        "priority_band": "medium",
+        "components": {
+          "evidence_strength": 2,
+          "segment_size": 3,
+          "strategic_importance": 3,
+          "actionability": 1,
+          "confidence": 2
+        }
+      },
+      "confidence": "medium",
+      "assumptions": [
+        "Reliability concerns are suppressing exploration, not just driving churn.",
+        "Trust cues placed near expansion surfaces will change willingness to browse or add items.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_007",
+        "insight_ids": [
+          "insight_eb266bbb"
+        ],
+        "theme_ids": [
+          "past_bad_experience__replenishment__other"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_009",
+      "priority_rank": 9,
+      "linked_opportunity_id": "opp_002",
+      "hypothesis": "If Instamart uses improve discovery prompts and category navigation in high-intent journeys for Explorer users during browse discover missions, then share of users who open or add from a new category should improve for grocery opportunities.",
+      "user_problem": "Explorer users show a repeat pattern in browse discover journeys, but the root cause is not specific enough for a single intervention yet.",
+      "proposed_intervention": "Review the underlying evidence manually and refine the barrier definition.",
+      "expected_effect": "Clarifying the theme can prevent low-signal experiments and sharpen the backlog.",
+      "primary_metric": "share of users who open or add from a new category",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 9,
+        "priority_band": "low",
+        "components": {
+          "evidence_strength": 1,
+          "segment_size": 2,
+          "strategic_importance": 2,
+          "actionability": 3,
+          "confidence": 1
+        }
+      },
+      "confidence": "low",
+      "assumptions": [
+        "Current evidence is directionally useful but not precise enough for a strong product bet.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional.",
+        "No recommendation here should be treated as proof of causality without an experiment."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_002",
+        "insight_ids": [
+          "insight_b92d1ed9"
+        ],
+        "theme_ids": [
+          "other__browse_discover__grocery"
+        ]
+      }
+    },
+    {
+      "hypothesis_id": "hyp_010",
+      "priority_rank": 10,
+      "linked_opportunity_id": "opp_009",
+      "hypothesis": "If Instamart uses show low-risk entry offers or bundles for adjacent categories for Family Household users during urgent need missions, then trial conversion for promoted adjacent-category items should improve for cross-category opportunities.",
+      "user_problem": "Family Household users hesitate to add new-category items because total cost feels uncertain or not worth the risk.",
+      "proposed_intervention": "Bundle adjacent-category trials with staple reorder journeys.",
+      "expected_effect": "Lower perceived risk should improve trial conversion in categories users already consider but do not purchase.",
+      "primary_metric": "trial conversion for promoted adjacent-category items",
+      "guardrail_metrics": [
+        "overall order conversion",
+        "customer support contacts per order",
+        "refund or cancellation rate"
+      ],
+      "priority": {
+        "score": 8,
+        "priority_band": "low",
+        "components": {
+          "evidence_strength": 1,
+          "segment_size": 3,
+          "strategic_importance": 2,
+          "actionability": 1,
+          "confidence": 1
+        }
+      },
+      "confidence": "low",
+      "assumptions": [
+        "Users already have some intent but stop because economics are unclear.",
+        "Targeted offers will drive exploration without fully training users to wait for discounts.",
+        "The current sample is still dominated by Play Store complaints and should be treated as directional."
+      ],
+      "traceability": {
+        "opportunity_id": "opp_009",
+        "insight_ids": [
+          "insight_223df075"
+        ],
+        "theme_ids": [
+          "delivery_fee_threshold__urgent_need__other"
+        ]
+      }
+    }
+  ]
+}

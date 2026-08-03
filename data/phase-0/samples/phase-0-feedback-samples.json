@@ -1,0 +1,356 @@
+{
+  "description": "Phase 0 sample feedback for taxonomy walkthrough (25 items). Expected labels are human-reviewed gold standard.",
+  "taxonomy_version": "1.0.0",
+  "samples": [
+    {
+      "id": "S01",
+      "source": "play_store",
+      "body_text": "I use Instamart every week for the same groceries - milk, bread, eggs. Never bothered to check what else they sell.",
+      "expected": {
+        "categories_mentioned": ["grocery"],
+        "shopping_mission": "replenishment",
+        "barriers": ["habit_lock_in", "low_awareness"],
+        "discovery_channels": ["reorder_previous"],
+        "sentiment": "neutral",
+        "user_segment_hypothesis": "habitual_replenisher",
+        "habit_signal": true,
+        "experimentation_signal": false
+      }
+    },
+    {
+      "id": "S02",
+      "source": "reddit",
+      "body_text": "Got a puppy last month and had no idea Instamart sells pet food until my neighbour told me. Game changer.",
+      "expected": {
+        "categories_mentioned": ["pet_supplies"],
+        "adjacent_category_opportunity": ["pet_supplies"],
+        "shopping_mission": "urgent_need",
+        "barriers": ["low_awareness"],
+        "triggers": ["life_event", "recommendation"],
+        "discovery_channels": ["external_referral"],
+        "sentiment": "positive",
+        "user_segment_hypothesis": "pet_owner",
+        "habit_signal": false,
+        "experimentation_signal": true
+      }
+    },
+    {
+      "id": "S03",
+      "source": "app_store",
+      "body_text": "Personal care section is overpriced compared to Amazon. I only buy snacks and drinks here.",
+      "expected": {
+        "categories_mentioned": ["personal_care", "snacks_beverages"],
+        "shopping_mission": "deal_hunting",
+        "barriers": ["price_sensitivity"],
+        "price_concerns": ["better_price_elsewhere", "too_expensive"],
+        "sentiment": "negative",
+        "user_segment_hypothesis": "deal_seeker",
+        "habit_signal": true,
+        "experimentation_signal": false
+      }
+    },
+    {
+      "id": "S04",
+      "source": "play_store",
+      "body_text": "App is so cluttered. I just search for what I need and checkout. Don't have time to browse.",
+      "expected": {
+        "shopping_mission": "urgent_need",
+        "barriers": ["cognitive_overload", "mission_narrowness"],
+        "discovery_channels": ["search"],
+        "friction_types": ["navigation_ux"],
+        "sentiment": "negative",
+        "user_segment_hypothesis": "single_professional",
+        "urgency_context": true,
+        "convenience_signal": true
+      }
+    },
+    {
+      "id": "S05",
+      "source": "reddit",
+      "body_text": "The reorder button is amazing. Same list every time - vegetables, dal, rice, oil. Why change?",
+      "expected": {
+        "categories_mentioned": ["grocery"],
+        "shopping_mission": "replenishment",
+        "barriers": ["habit_lock_in"],
+        "discovery_channels": ["reorder_previous"],
+        "triggers": [],
+        "sentiment": "positive",
+        "user_segment_hypothesis": "habitual_replenisher",
+        "habit_signal": true,
+        "experimentation_signal": false
+      }
+    },
+    {
+      "id": "S06",
+      "source": "app_store",
+      "body_text": "Tried buying baby wipes but worried about expiry date. No clear info on packaging date.",
+      "expected": {
+        "categories_mentioned": ["baby_products"],
+        "shopping_mission": "urgent_need",
+        "barriers": ["trust_quality", "information_gap"],
+        "trust_concerns": ["freshness_expiry"],
+        "information_gaps": ["no_ingredients"],
+        "sentiment": "negative",
+        "user_segment_hypothesis": "parent"
+      }
+    },
+    {
+      "id": "S07",
+      "source": "play_store",
+      "body_text": "50% off on skincare made me try a face wash I'd never buy otherwise. Good deal!",
+      "expected": {
+        "categories_mentioned": ["personal_care"],
+        "shopping_mission": "deal_hunting",
+        "triggers": ["promotion_offer"],
+        "discovery_channels": ["promotional_banner"],
+        "sentiment": "positive",
+        "user_segment_hypothesis": "deal_seeker",
+        "experimentation_signal": true
+      }
+    },
+    {
+      "id": "S08",
+      "source": "reddit",
+      "body_text": "Instamart doesn't have Royal Canin cat food. Have to order pet stuff from somewhere else.",
+      "expected": {
+        "categories_mentioned": ["pet_supplies"],
+        "barriers": ["assortment_gap"],
+        "assortment_concerns": ["brand_missing"],
+        "sentiment": "negative",
+        "user_segment_hypothesis": "pet_owner"
+      }
+    },
+    {
+      "id": "S09",
+      "source": "app_store",
+      "body_text": "Delivery was late and vegetables were wilted. Not ordering fresh stuff again, stick to packaged snacks.",
+      "expected": {
+        "categories_mentioned": ["grocery", "snacks_beverages"],
+        "barriers": ["past_bad_experience", "trust_quality"],
+        "friction_types": ["delivery_experience"],
+        "trust_concerns": ["freshness_expiry"],
+        "sentiment": "negative",
+        "habit_signal": true
+      }
+    },
+    {
+      "id": "S10",
+      "source": "play_store",
+      "body_text": "Love the speed! Ordered chips and coke at midnight. Didn't even know they have home cleaning products.",
+      "expected": {
+        "categories_mentioned": ["snacks_beverages", "household_essentials"],
+        "adjacent_category_opportunity": ["household_essentials"],
+        "shopping_mission": "urgent_need",
+        "barriers": ["low_awareness"],
+        "discovery_channels": ["search"],
+        "sentiment": "mixed",
+        "user_segment_hypothesis": "student",
+        "urgency_context": true,
+        "convenience_signal": true
+      }
+    },
+    {
+      "id": "S11",
+      "source": "reddit",
+      "body_text": "Saw 'frequently bought together' suggestion and added shampoo to my grocery order. Didn't plan to but why not.",
+      "expected": {
+        "categories_mentioned": ["grocery", "personal_care"],
+        "shopping_mission": "replenishment",
+        "triggers": ["recommendation"],
+        "discovery_channels": ["recommendation_engine"],
+        "sentiment": "neutral",
+        "experimentation_signal": true
+      }
+    },
+    {
+      "id": "S12",
+      "source": "app_store",
+      "body_text": "Adding one more item pushes my cart above free delivery threshold. Not worth it for trying something new.",
+      "expected": {
+        "barriers": ["delivery_fee_threshold", "price_sensitivity"],
+        "price_concerns": ["delivery_fee"],
+        "sentiment": "negative",
+        "user_segment_hypothesis": "deal_seeker"
+      }
+    },
+    {
+      "id": "S13",
+      "source": "play_store",
+      "body_text": "First time user. The homepage has so many categories I don't know where to start. Just bought milk.",
+      "expected": {
+        "categories_mentioned": ["grocery"],
+        "shopping_mission": "urgent_need",
+        "barriers": ["cognitive_overload", "poor_discovery"],
+        "friction_types": ["navigation_ux"],
+        "discovery_channels": ["homepage_browse"],
+        "sentiment": "mixed",
+        "user_segment_hypothesis": "new_user",
+        "habit_signal": false,
+        "experimentation_signal": false
+      }
+    },
+    {
+      "id": "S14",
+      "source": "reddit",
+      "body_text": "Summer heat made me search for sunscreen on Instamart. Never bought personal care here before.",
+      "expected": {
+        "categories_mentioned": ["personal_care"],
+        "shopping_mission": "urgent_need",
+        "triggers": ["seasonal_need", "search_intent"],
+        "discovery_channels": ["search"],
+        "sentiment": "neutral",
+        "experimentation_signal": true,
+        "occasion_context": "summer"
+      }
+    },
+    {
+      "id": "S15",
+      "source": "app_store",
+      "body_text": "We order household cleaning stuff monthly but never tried their baby section even though we have a toddler.",
+      "expected": {
+        "categories_mentioned": ["household_essentials", "baby_products"],
+        "adjacent_category_opportunity": ["baby_products"],
+        "shopping_mission": "replenishment",
+        "barriers": ["habit_lock_in", "low_awareness"],
+        "sentiment": "neutral",
+        "user_segment_hypothesis": "parent",
+        "habit_signal": true
+      }
+    },
+    {
+      "id": "S16",
+      "source": "play_store",
+      "body_text": "Party tonight - grabbed chips, drinks, and ice cream. Quick and easy.",
+      "expected": {
+        "categories_mentioned": ["snacks_beverages"],
+        "shopping_mission": "occasion_based",
+        "discovery_channels": ["search"],
+        "sentiment": "positive",
+        "urgency_context": true,
+        "convenience_signal": true,
+        "occasion_context": "party"
+      }
+    },
+    {
+      "id": "S17",
+      "source": "reddit",
+      "body_text": "My usual bread was out of stock so I tried a new brand of cookies from the snacks aisle. Pleasant surprise.",
+      "expected": {
+        "categories_mentioned": ["grocery", "snacks_beverages"],
+        "triggers": ["out_of_stock_substitute"],
+        "discovery_channels": ["search"],
+        "sentiment": "positive",
+        "experimentation_signal": true
+      }
+    },
+    {
+      "id": "S18",
+      "source": "app_store",
+      "body_text": "No reviews on most personal care products. How am I supposed to know if it's good?",
+      "expected": {
+        "categories_mentioned": ["personal_care"],
+        "barriers": ["information_gap", "trust_quality"],
+        "information_gaps": ["no_reviews"],
+        "trust_concerns": ["brand_reliability"],
+        "friction_types": ["product_information"],
+        "sentiment": "negative"
+      }
+    },
+    {
+      "id": "S19",
+      "source": "play_store",
+      "body_text": "I explore different categories every week - groceries, wellness, home needs. Love the variety.",
+      "expected": {
+        "categories_mentioned": ["grocery", "health_wellness", "home_needs"],
+        "shopping_mission": "browse_discover",
+        "discovery_channels": ["homepage_browse"],
+        "sentiment": "positive",
+        "user_segment_hypothesis": "explorer",
+        "experimentation_signal": true,
+        "habit_signal": false
+      }
+    },
+    {
+      "id": "S20",
+      "source": "reddit",
+      "body_text": "Instamart search is terrible for finding niche items. Gave up looking for protein bars and just reordered dal.",
+      "expected": {
+        "categories_mentioned": ["grocery", "health_wellness"],
+        "shopping_mission": "replenishment",
+        "barriers": ["poor_discovery", "assortment_gap"],
+        "friction_types": ["search_relevance"],
+        "assortment_concerns": ["sku_missing"],
+        "discovery_channels": ["search", "reorder_previous"],
+        "sentiment": "negative",
+        "habit_signal": true
+      }
+    },
+    {
+      "id": "S21",
+      "source": "app_store",
+      "body_text": "Snack and drink combo deal introduced me to a new energy drink brand. Wouldn't have found it otherwise.",
+      "expected": {
+        "categories_mentioned": ["snacks_beverages"],
+        "triggers": ["bundle_combo", "promotion_offer"],
+        "discovery_channels": ["promotional_banner"],
+        "sentiment": "positive",
+        "experimentation_signal": true
+      }
+    },
+    {
+      "id": "S22",
+      "source": "play_store",
+      "body_text": "Only use Instamart when Swiggy food delivery gives me a grocery coupon. Otherwise Blinkit is cheaper.",
+      "expected": {
+        "shopping_mission": "deal_hunting",
+        "barriers": ["price_sensitivity"],
+        "price_concerns": ["better_price_elsewhere"],
+        "triggers": ["promotion_offer"],
+        "sentiment": "mixed",
+        "user_segment_hypothesis": "deal_seeker"
+      }
+    },
+    {
+      "id": "S23",
+      "source": "reddit",
+      "body_text": "Moving to a new apartment and discovered Instamart sells basic home stuff - hangers, bins, cleaning supplies. Bought everything in one go.",
+      "expected": {
+        "categories_mentioned": ["household_essentials", "home_needs"],
+        "shopping_mission": "occasion_based",
+        "triggers": ["life_event"],
+        "discovery_channels": ["homepage_browse"],
+        "sentiment": "positive",
+        "experimentation_signal": true,
+        "occasion_context": "moving"
+      }
+    },
+    {
+      "id": "S24",
+      "source": "app_store",
+      "body_text": "Recipe video needed ginger and curry leaves. Ordered just those two items. Fast delivery saved dinner.",
+      "expected": {
+        "categories_mentioned": ["grocery"],
+        "shopping_mission": "recipe_driven",
+        "discovery_channels": ["search"],
+        "sentiment": "positive",
+        "urgency_context": true,
+        "convenience_signal": true,
+        "barriers": ["mission_narrowness"]
+      }
+    },
+    {
+      "id": "S25",
+      "source": "play_store",
+      "body_text": "New arrivals banner on homepage showed organic snacks. Tried them and now I order health stuff too.",
+      "expected": {
+        "categories_mentioned": ["snacks_beverages", "health_wellness"],
+        "shopping_mission": "browse_discover",
+        "triggers": ["homepage_feature"],
+        "discovery_channels": ["homepage_browse"],
+        "sentiment": "positive",
+        "user_segment_hypothesis": "health_conscious",
+        "experimentation_signal": true
+      }
+    }
+  ]
+}

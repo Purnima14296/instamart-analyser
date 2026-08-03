@@ -1,0 +1,336 @@
+{
+  "created_at": "2026-07-28T13:53:00+00:00",
+  "instructions": "Fill expected_labels for each record before running gold-eval. Required: shopping_mission, barriers (list). Target: >=80% agreement on barriers and shopping_mission.",
+  "records": [
+    {
+      "record_id": "000bbfc6-ae5e-4b6c-9f04-10928d1c7975",
+      "source": "reddit",
+      "rating": null,
+      "word_count": 15,
+      "body_text": "Instamart search is bad for finding niche health products. Gave up and reordered dal instead.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0129879e-b580-49a5-903a-9f4a992a45ff",
+      "source": "play_store",
+      "rating": 4,
+      "word_count": 10,
+      "body_text": "fast and reliable delivery of items within timeframe. especially Instamart",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "02c1eb35-32b7-4cca-a387-19d77ad055cc",
+      "source": "play_store",
+      "rating": 5,
+      "word_count": 13,
+      "body_text": "worst experience by Instamart they stolen my money don use Instamart and Swiggy",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "02e75ffa-d358-4225-8a03-8a8437a58a6c",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 12,
+      "body_text": "pathetic service they have provided i have never expected this from instamart",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "04b8ba08-e97c-4d66-bac0-c87e06468af8",
+      "source": "play_store",
+      "rating": 5,
+      "word_count": 13,
+      "body_text": "Good Experience And All Item's Is budget Friendly.... Thank u So Much Instamart...",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "062cb2b8-3e75-4222-8e34-d0552c6c8eeb",
+      "source": "play_store",
+      "rating": 2,
+      "word_count": 13,
+      "body_text": "how to find insta mart how your developrs are making UI.... its difficult.....",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "06b8c263-bbb2-46a9-a7a0-c9da4281f83c",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 8,
+      "body_text": "why not Lunch Instamart in Jalpaiguri (west bengal)",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "08ca5bcc-0b4c-4fb7-9cdd-fadf2671ab52",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 13,
+      "body_text": "Swiggy Instamart provided me with an expired cosmetic product.Hell service with hell support",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0aa4ba44-67c7-4afd-9408-f6a9bb7f13b7",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 6,
+      "body_text": "On behalf of Instamart. Pathetic service",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0b783d82-0312-4564-ac58-5b47b34d55de",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 8,
+      "body_text": "very bad customer care service by Swiggy Instamart",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0001c2be-3285-49f9-80eb-a009fda93966",
+      "source": "twitter",
+      "rating": null,
+      "word_count": 25,
+      "body_text": "Tweet: Blinkit vs Instamart thread — Blinkit UI makes browsing new categories easier. Instamart wins on Swiggy integration but I stay in my grocery bubble.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "002c5ea4-70ae-4c95-81f4-c224b66802c8",
+      "source": "play_store",
+      "rating": 5,
+      "word_count": 38,
+      "body_text": "Best Especially Instamart price are really very low compared to other apps like zepto and minutes.. i always ordered big list only on Swiggy insta mart it saves my money really well thanks you Swiggy keep it up.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "002e884c-e154-4b58-9bfd-0de30c1b851c",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 24,
+      "body_text": "uninstalling the app.. instamart version is very poor. They didn't give refund on time.. also give poor items. didn't reply neatly. very bad experience.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0052d703-a5cf-41a6-b0bf-37e0d7b5a397",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 25,
+      "body_text": "fraud app always charging serge fees and I see many instamart guy are standing at the store waiting for order and they applied surge fees",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "00601175-c8ed-448d-8fae-11d1f1548c22",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 30,
+      "body_text": "Swiggy offers sweet food coupons on Instamart purchases, then surprisingly cancels the order after I've waited over an hour. Stop this scam. This is my last food order on Swiggy.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "00c2bce7-d466-466e-ad25-1e6237f7be47",
+      "source": "play_store",
+      "rating": 2,
+      "word_count": 43,
+      "body_text": "It was a really bad experience with the customer service especially the chat support they just copy paste the statement no proper service and the insta mart every time it will be unserviceable or if it's available it asks for surge fee waste",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "00ecd32a-c503-437a-8bfd-3e33180ff388",
+      "source": "play_store",
+      "rating": 5,
+      "word_count": 17,
+      "body_text": "Nice app for foodie lovers and also given more coupons for swiggy to instamart and vice versa.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0219ef9e-66cb-4ea4-9b26-8b3d9e3977e6",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 35,
+      "body_text": "instamart has nowadays started delivering with surge fees and handling fees.. But mentioning as free delivery for a certain amount of purchase. only instamart is charging these extra amounts even if you have a membership.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "025564f6-0c03-46d5-bd30-4c609e64276d",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 36,
+      "body_text": "Rotten products delivered at Instamart. Also their customer service is useless.. Blinkit or big basket also does immediate refund against damaged or spoilt food. Would suggest clients to better opt for other platforms rather than Instamart",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "02920604-ee17-4d78-8aab-ab657d0450ac",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 24,
+      "body_text": "such a poor experience I had with Swiggy Instamart and they didn't explaining about the product clearly because of that I lost my 1725rs...",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "004f378b-6bd9-430f-9f3b-2a4130bcde61",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 84,
+      "body_text": "Recently Swiggy Instamart started large items electronic delivery. I faced major concern. the product was wrong, and the delivery agent stole OTP and went away. The geyser was wrongly delivered and safety and trust was breached. yet there was no action, no refund given. the caller who was supposed to take action did not call back. and deserted the chat window..Swiggy makes the chat window idle and doesn't give call option in such cases and thus Swiggy Instamart can't be trusted for large items",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "00a19a95-b178-4357-ac06-63ad2d20aef9",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 64,
+      "body_text": "when i called to complain to the executives, they said we have raised the issue but we cant do anything more because it was already updated,then i told her to connect me with her manager she told me to wait and the call was never resumed. I cannot believe swiggy instamart is treating their customer this way..its a shame ,Never gona use instamart again.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "013268dc-3933-4496-b005-5bafe1331df8",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 92,
+      "body_text": "Using swiggy from many years but still i would say never seen such third class service no matter if u ordering food or grocery you will be disappointed First of all they always fail to deliver on time app will show you 20 to 30 mins but u will recieve your order in 50 to 60mins they wont pick ur order unless they have Multi order now instamart many times i have received expired items,Tampered packaging,missing items you will get refund one time in 10 orders no matter what the issue is",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "019ddbb8-988d-47b7-8d7b-9e63ce05f583",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 86,
+      "body_text": "Very disappointing experience with Instamart. The app showed an estimated delivery time of around 15 minutes, but even after waiting for almost 1 hour the order was still not delivered. Customer support kept extending the time, first saying 10 minutes and then 15 minutes again, but there was no actual update or delivery. After waiting so long, they simply told me to cancel the order instead of resolving the issue. If the delivery time shown in the app is not accurate, it should not be displayed",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "02082c2d-2da5-4ec3-bc02-5f32a196fc43",
+      "source": "play_store",
+      "rating": 2,
+      "word_count": 96,
+      "body_text": "the app works good except zepto delivers in half the time of instamart deliveries. and some of the delivery agents on swiggy do not know how to read english or even other languages- and hence mess up the orders. so I would recommend that swiggy gives the option of reading the information out loud to them (meaning the delivery agents) so they know what has to be done and do not mess up any orders. it is not the delivery agents fault if they dont know how to read. it is upon us to help them!!",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "034ff1a1-f00e-482f-937c-069cfc967120",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 56,
+      "body_text": "I received a faulty pop up toaster. inspite of writing mails I have got no response yet. does this mean that never to buy any appliance from Instamart I have already mail to Swiggy support. but no response yet I haven't yet received any response from Swiggy support. I have also sent them the order invoice",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "0533c406-ac98-47e7-854b-5f594b723fee",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 59,
+      "body_text": "I have ordered from Instamart by mistake i have selected one wrong item for that they have taken a 100% cancelled fee amount of 236. Hence I was a regular Swiggy customer. They are giving false promises to customers that the amount will be credited to your account but after a few days they will say a cancellation fee,!",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "09892675-f511-49a8-a026-98d58d8be9e9",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 79,
+      "body_text": "I am beyond disappointed with Swiggy's Instamart—this is absolutely the worst experience I have ever had with a delivery app. I ordered an item, but due to unforeseen circumstances, I had to cancel it. Shockingly, they took the entire order amount as a cancellation fee—this is outright theft! The service quality is horrendous, and the way they operate is completely unethical. I should have been charged only a small fee, but instead, they robbed me of my entire payment.",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "098cdf29-cb0f-4625-b022-c4cacfae71f8",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 51,
+      "body_text": "I have ordered my snacks in Instamart...in my friend phone but the delivery partner not give my snackss and I have paid my money when I ordered....very worstt....and that snacks was delivered showing...but I not get that snacks.....veryyy verry worsttt delivery...and help line also reply too late and not reply well",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    },
+    {
+      "record_id": "09a30f02-8f7f-4340-8c0a-cca0f0dfeafd",
+      "source": "play_store",
+      "rating": 1,
+      "word_count": 97,
+      "body_text": "I'll order insta mart for my grocery need 3 to 5 times experience was good ,today I'll order something grocery like egg 148 rupees 12 egg it's big brand egg but they deliverd me the egg expire in 1 week, I thought ok no worries 1 week is okay but after broke egg for cooking oh thay deliverd me garvage egg loke like a curd, try to avoid this insta service for future,,, bahot he Ganda experience huwa yaar inse bachake 20 ya 50 ka coupon ke chaker me padogay to yeah log kachada dalke paissa lega",
+      "expected_labels": {
+        "shopping_mission": null,
+        "barriers": []
+      }
+    }
+  ]
+}

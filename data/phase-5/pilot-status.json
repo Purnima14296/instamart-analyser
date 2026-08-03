@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-07-30T15:48:30+00:00",
+  "pilot_scope": {
+    "cohort_size": 989,
+    "enriched_count": 164,
+    "enrichment_error_count": 830,
+    "enrichment_coverage_pct": 16.6,
+    "normalized_review_count": 969,
+    "theme_cluster_count": 19,
+    "insight_count": 10,
+    "opportunity_count": 10,
+    "hypothesis_count": 10
+  },
+  "artifact_checks": {
+    "phase1_normalized_db": true,
+    "phase1_pre_llm_analysis": true,
+    "phase2_cohort": true,
+    "phase2_enriched_db": true,
+    "phase3_theme_summary": true,
+    "phase3_insights": true,
+    "phase3_stakeholder_summary": true,
+    "phase4_opportunity_map": true,
+    "phase4_hypothesis_backlog": true,
+    "phase4_experiment_memo": true
+  },
+  "readiness": {
+    "artifacts_complete": true,
+    "has_enriched_sample": true,
+    "has_insights": true,
+    "has_hypotheses": true,
+    "bias_documented": true,
+    "enrichment_coverage_note": "Partial enrichment is acceptable for pilot if bias and confidence are documented."
+  },
+  "pilot_ready": true,
+  "known_limitations": [
+    "Public feedback overrepresents extreme negative opinions.",
+    "Play Store reviews dominate the sample.",
+    "Partial enrichment means Phase 3–4 conclusions are directional, not final.",
+    "Recommendations must not be treated as causal proof without experiments."
+  ]
+}

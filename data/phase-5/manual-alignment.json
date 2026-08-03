@@ -1,0 +1,93 @@
+{
+  "created_at": "2026-07-30T15:48:30+00:00",
+  "method": "Compare Phase 1 keyword theme counts (mapped to taxonomy barriers) against Phase 3 AI-enriched barrier counts.",
+  "aligned_top5_count": 4,
+  "alignment_verdict": "Major themes align between keyword pre-analysis and AI enrichment.",
+  "comparisons": [
+    {
+      "barrier": "trust_quality",
+      "pre_llm_mapped_count": 112,
+      "ai_enriched_count": 60,
+      "pre_llm_rank": 4,
+      "ai_rank": 1,
+      "aligned_in_top5": true
+    },
+    {
+      "barrier": "past_bad_experience",
+      "pre_llm_mapped_count": 1017,
+      "ai_enriched_count": 51,
+      "pre_llm_rank": 1,
+      "ai_rank": 2,
+      "aligned_in_top5": true
+    },
+    {
+      "barrier": "poor_discovery",
+      "pre_llm_mapped_count": 497,
+      "ai_enriched_count": 30,
+      "pre_llm_rank": 2,
+      "ai_rank": 3,
+      "aligned_in_top5": true
+    },
+    {
+      "barrier": "delivery_fee_threshold",
+      "pre_llm_mapped_count": 0,
+      "ai_enriched_count": 23,
+      "pre_llm_rank": null,
+      "ai_rank": 4,
+      "aligned_in_top5": false
+    },
+    {
+      "barrier": "price_sensitivity",
+      "pre_llm_mapped_count": 253,
+      "ai_enriched_count": 21,
+      "pre_llm_rank": 3,
+      "ai_rank": 5,
+      "aligned_in_top5": true
+    },
+    {
+      "barrier": "other",
+      "pre_llm_mapped_count": 0,
+      "ai_enriched_count": 16,
+      "pre_llm_rank": null,
+      "ai_rank": 6,
+      "aligned_in_top5": false
+    },
+    {
+      "barrier": "habit_lock_in",
+      "pre_llm_mapped_count": 101,
+      "ai_enriched_count": 13,
+      "pre_llm_rank": 5,
+      "ai_rank": 7,
+      "aligned_in_top5": false
+    },
+    {
+      "barrier": "assortment_gap",
+      "pre_llm_mapped_count": 0,
+      "ai_enriched_count": 7,
+      "pre_llm_rank": null,
+      "ai_rank": 8,
+      "aligned_in_top5": false
+    },
+    {
+      "barrier": "cognitive_overload",
+      "pre_llm_mapped_count": 0,
+      "ai_enriched_count": 6,
+      "pre_llm_rank": null,
+      "ai_rank": 9,
+      "aligned_in_top5": false
+    },
+    {
+      "barrier": "information_gap",
+      "pre_llm_mapped_count": 0,
+      "ai_enriched_count": 5,
+      "pre_llm_rank": null,
+      "ai_rank": 10,
+      "aligned_in_top5": false
+    }
+  ],
+  "notes": [
+    "Keyword analysis covers the full normalized corpus; AI barriers cover the enriched subset only.",
+    "Trust/quality and past-bad-experience often absorb delivery and support keyword themes.",
+    "Gold-set human labels remain the preferred precision check when filled."
+  ]
+}

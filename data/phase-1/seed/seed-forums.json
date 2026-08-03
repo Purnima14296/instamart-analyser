@@ -1,0 +1,26 @@
+{
+  "description": "Instamart-only community forum seed data",
+  "records": [
+    {
+      "source": "quora",
+      "source_record_id": "seed_quora_001",
+      "body_text": "Why do people stick to ordering the same groceries on Instamart every week instead of exploring personal care or pet supplies?",
+      "language": "en",
+      "metadata": {"category": "community_forums"}
+    },
+    {
+      "source": "quora",
+      "source_record_id": "seed_quora_002",
+      "body_text": "How do you discover new product categories on Instamart? I never browse beyond the search bar.",
+      "language": "en",
+      "metadata": {"category": "community_forums"}
+    },
+    {
+      "source": "facebook",
+      "source_record_id": "seed_fb_001",
+      "body_text": "Bangalore moms group: Many of us use Instamart only for vegetables and milk. Didn't know Instamart has a full baby care section.",
+      "language": "en",
+      "metadata": {"category": "community_forums"}
+    }
+  ]
+}
